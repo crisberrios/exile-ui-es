@@ -1,0 +1,22 @@
+[project]
+name = "exile-ui-es"
+version = "0.1.0"
+description = "Herramienta de traducción al español (LATAM) para Exile-UI"
+requires-python = ">=3.11"
+dependencies = [
+    "requests>=2.31",
+    "deepdiff>=7.0",
+    "click>=8.1",
+]
+
+[project.scripts]
+exile-ui-es = "exile_ui_es.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=8.0",
+]
