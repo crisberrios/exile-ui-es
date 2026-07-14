@@ -5,4 +5,7 @@ dist/
 *.egg-info/
 .pytest_cache/
 build/
+downloads/downloads/*.zip
+bundle/
+dist/
 downloads/
