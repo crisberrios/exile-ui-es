@@ -1,4 +1,4 @@
-.PHONY: install test pull translate patch clean
+.PHONY: install test pull translate patch apply bundle revert clean
 
 install:
 	uv sync
@@ -14,6 +14,15 @@ translate:
 
 patch:
 	uv run exile-ui-es patch
+
+apply:
+	uv run exile-ui-es apply --install $(INSTALL)
+
+bundle:
+	uv run exile-ui-es bundle
+
+revert:
+	uv run exile-ui-es revert --install $(INSTALL)
 
 clean:
 	rm -rf downloads/ data/spanish/ data/patches/ .pytest_cache/

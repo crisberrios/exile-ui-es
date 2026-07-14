@@ -1,5 +1,6 @@
 # exile_ui_es/cli.py
 import json
+import shutil
 import sys
 from pathlib import Path
 
@@ -8,7 +9,7 @@ import click
 from exile_ui_es import __version__
 from exile_ui_es.downloader import GitHubRelease
 from exile_ui_es.parser import parse_txt, serialize_txt
-from exile_ui_es.patcher import generate_patch, save_patch
+from exile_ui_es.patcher import generate_patch, apply_patch, save_patch
 from exile_ui_es.translations.ui import translate_ui
 from exile_ui_es.translations.client import translate_client
 from exile_ui_es.translations.game_data import translate_game_data
@@ -164,6 +165,124 @@ def patch(source, translated):
             click.echo(f"  {txt_file}.patch.json generado")
 
     click.echo(f"\nParches guardados en: {PATCHES_DIR}")
+
+
+@main.command()
+@click.option(
+    "--install", "-i", required=True, help="Path to Exile-UI installation root"
+)
+def apply(install):
+    """Patch an Exile-UI installation with Spanish translations."""
+    install_dir = Path(install)
+    english_dir = install_dir / "data" / "english"
+    backup_dir = install_dir / "data" / "english.backup"
+
+    if not english_dir.exists():
+        click.echo(
+            f"Error: data/english not found in {install_dir}", err=True
+        )
+        sys.exit(1)
+
+    # Backup originals once
+    if not backup_dir.exists():
+        shutil.copytree(english_dir, backup_dir)
+        click.echo(f"Backup creado en: {backup_dir}")
+
+    # Apply .txt patches
+    for patch_file in PATCHES_DIR.glob("*.patch.json"):
+        base_name = patch_file.name.replace(".patch.json", "")
+        orig_path = english_dir / base_name
+        if orig_path.exists():
+            orig = parse_txt(orig_path.read_text(encoding="utf-8"))
+            patch_data = json.loads(patch_file.read_text(encoding="utf-8"))
+            patched = apply_patch(orig, patch_data)
+            orig_path.write_text(serialize_txt(patched), encoding="utf-8")
+            click.echo(f"  {base_name} → parcheado")
+
+    # Copy Spanish JSON files
+    spanish_dir = DATA_DIR / "spanish"
+    if spanish_dir.exists():
+        for json_file in spanish_dir.glob("*.json"):
+            dest = english_dir / json_file.name
+            shutil.copy2(json_file, dest)
+            click.echo(f"  {json_file.name} → copiado")
+
+    click.echo(f"\nInstalación parcheada en: {install_dir}")
+
+
+@main.command()
+@click.option(
+    "--output", "-o", default=None, help="Output directory for the bundle"
+)
+def bundle(output):
+    """Create a downloadable zip artifact with Spanish translations."""
+    import tempfile
+
+    release = GitHubRelease("Lailloken/Exile-UI")
+
+    out_dir = Path(output) if output else DOWNLOADS_DIR
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp_path = Path(tmp)
+        tag = release.download_full_release(tmp_path)
+        extracted = next(tmp_path.iterdir())
+        english_dir = extracted / "data" / "english"
+
+        # Apply .txt patches
+        for patch_file in PATCHES_DIR.glob("*.patch.json"):
+            base_name = patch_file.name.replace(".patch.json", "")
+            orig_path = english_dir / base_name
+            if orig_path.exists():
+                orig = parse_txt(orig_path.read_text(encoding="utf-8"))
+                patch_data = json.loads(
+                    patch_file.read_text(encoding="utf-8")
+                )
+                patched = apply_patch(orig, patch_data)
+                orig_path.write_text(serialize_txt(patched), encoding="utf-8")
+                click.echo(f"  {base_name} → parcheado")
+
+        # Copy Spanish JSON files
+        spanish_dir = DATA_DIR / "spanish"
+        if spanish_dir.exists():
+            for json_file in spanish_dir.glob("*.json"):
+                dest = english_dir / json_file.name
+                shutil.copy2(json_file, dest)
+                click.echo(f"  {json_file.name} → copiado")
+
+        # Create zip
+        bundle_name = f"Exile-UI-es-{tag}.zip"
+        bundle_path = out_dir / bundle_name
+        shutil.make_archive(
+            str(bundle_path.with_suffix("")),
+            "zip",
+            extracted.parent,
+            extracted.name,
+        )
+        click.echo(f"\nBundle creado: {bundle_path}")
+
+
+@main.command()
+@click.option(
+    "--install", "-i", required=True, help="Path to Exile-UI installation root"
+)
+def revert(install):
+    """Restore English from backup."""
+    install_dir = Path(install)
+    backup_dir = install_dir / "data" / "english.backup"
+    english_dir = install_dir / "data" / "english"
+
+    if not backup_dir.exists():
+        click.echo(
+            f"Error: Backup not found at {backup_dir}", err=True
+        )
+        sys.exit(1)
+
+    # Remove current English and restore from backup
+    if english_dir.exists():
+        shutil.rmtree(english_dir)
+    shutil.copytree(backup_dir, english_dir)
+    click.echo(f"Restaurado desde: {backup_dir}")
 
 
 if __name__ == "__main__":
