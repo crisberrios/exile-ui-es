@@ -8,7 +8,7 @@ import click
 
 from exile_ui_es import __version__
 from exile_ui_es.downloader import GitHubRelease
-from exile_ui_es.parser import parse_txt, serialize_txt
+from exile_ui_es.parser import parse_txt, serialize_txt, translate_txt_file
 from exile_ui_es.patcher import generate_patch, apply_patch, save_patch
 from exile_ui_es.translations.ui import translate_ui
 from exile_ui_es.translations.client import translate_client
@@ -83,25 +83,25 @@ def translate(source, output):
 
     click.echo(f"Traduciendo archivos desde: {src_dir}")
 
-    # Translate UI.txt
+    # Translate UI.txt (preserving structure)
     ui_path = src_dir / "UI.txt"
     if ui_path.exists():
         content = ui_path.read_text(encoding="utf-8")
-        strings = parse_txt(content)
-        translated = translate_ui(strings)
+        translated_content = translate_txt_file(content, translate_ui)
         out_path = out_dir / "UI.txt"
-        out_path.write_text(serialize_txt(translated), encoding="utf-8")
-        click.echo(f"  UI.txt → {len(translated)} strings traducidos")
+        out_path.write_text(translated_content, encoding="utf-8")
+        strings = parse_txt(translated_content)
+        click.echo(f"  UI.txt → {len(strings)} strings")
 
-    # Translate client.txt
+    # Translate client.txt (preserving structure)
     client_path = src_dir / "client.txt"
     if client_path.exists():
         content = client_path.read_text(encoding="utf-8")
-        strings = parse_txt(content)
-        translated = translate_client(strings)
+        translated_content = translate_txt_file(content, translate_client)
         out_path = out_dir / "client.txt"
-        out_path.write_text(serialize_txt(translated), encoding="utf-8")
-        click.echo(f"  client.txt → {len(translated)} strings traducidos")
+        out_path.write_text(translated_content, encoding="utf-8")
+        strings = parse_txt(translated_content)
+        click.echo(f"  client.txt → {len(strings)} strings")
 
     # Translate JSON files
     for json_file in src_dir.glob("*.json"):
@@ -193,16 +193,13 @@ def apply(install):
         shutil.copytree(english_dir, backup_dir)
         click.echo(f"Backup creado en: {backup_dir}")
 
-    # Apply .txt patches
-    for patch_file in PATCHES_DIR.glob("*.patch.json"):
-        base_name = patch_file.name.replace(".patch.json", "")
-        orig_path = english_dir / base_name
-        if orig_path.exists():
-            orig = parse_txt(orig_path.read_text(encoding="utf-8"))
-            patch_data = json.loads(patch_file.read_text(encoding="utf-8"))
-            patched = apply_patch(orig, patch_data)
-            orig_path.write_text(serialize_txt(patched), encoding="utf-8")
-            click.echo(f"  {base_name} → parcheado")
+    # Apply .txt translations (copy structured files from spanish/)
+    for txt_file in ["UI.txt", "client.txt"]:
+        src_path = DATA_DIR / "spanish" / txt_file
+        if src_path.exists():
+            dest = english_dir / txt_file
+            shutil.copy2(src_path, dest)
+            click.echo(f"  {txt_file} → aplicado")
 
     # Copy Spanish JSON files
     spanish_dir = DATA_DIR / "spanish"
@@ -234,18 +231,13 @@ def bundle(output):
         extracted = next(tmp_path.iterdir())
         english_dir = extracted / "data" / "english"
 
-        # Apply .txt patches
-        for patch_file in PATCHES_DIR.glob("*.patch.json"):
-            base_name = patch_file.name.replace(".patch.json", "")
-            orig_path = english_dir / base_name
-            if orig_path.exists():
-                orig = parse_txt(orig_path.read_text(encoding="utf-8"))
-                patch_data = json.loads(
-                    patch_file.read_text(encoding="utf-8")
-                )
-                patched = apply_patch(orig, patch_data)
-                orig_path.write_text(serialize_txt(patched), encoding="utf-8")
-                click.echo(f"  {base_name} → parcheado")
+        # Apply .txt translations (copy structured files from spanish/)
+        for txt_file in ["UI.txt", "client.txt"]:
+            src_path = DATA_DIR / "spanish" / txt_file
+            if src_path.exists():
+                dest = english_dir / txt_file
+                shutil.copy2(src_path, dest)
+                click.echo(f"  {txt_file} → aplicado")
 
         # Copy Spanish JSON files
         spanish_dir = DATA_DIR / "spanish"

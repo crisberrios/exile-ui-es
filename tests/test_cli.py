@@ -1,13 +1,10 @@
 # tests/test_cli.py
-import json
 import tempfile
 from pathlib import Path
 
 from click.testing import CliRunner
 
 from exile_ui_es.cli import main
-from exile_ui_es.parser import parse_txt, serialize_txt
-from exile_ui_es.patcher import generate_patch, save_patch
 
 
 def test_cli_help():
@@ -119,7 +116,7 @@ def test_cli_revert_no_backup():
 
 
 def test_cli_apply_and_revert(tmp_path: Path):
-    """apply patches English files, revert restores them."""
+    """apply copies translated files to English dir; revert restores from backup."""
     # Set up a mock Exile-UI installation
     install = tmp_path / "exile-ui"
     english_dir = install / "data" / "english"
@@ -129,47 +126,40 @@ def test_cli_apply_and_revert(tmp_path: Path):
     ui_path = english_dir / "UI.txt"
     ui_path.write_text(original_content, encoding="utf-8")
 
-    # Create a real patch that changes KEY_ONE
-    orig = parse_txt(original_content)
-    translated = dict(orig)
-    translated["KEY_ONE"] = "Hola"
-    patch_data = generate_patch(orig, translated)
-
-    # Save patch where the CLI expects it
+    # Create translated Spanish files in data/spanish/
     import exile_ui_es.cli as cli_mod
 
-    cli_mod.PATCHES_DIR = tmp_path / "patches"
-    cli_mod.PATCHES_DIR.mkdir(parents=True)
-    save_patch(patch_data, cli_mod.PATCHES_DIR / "UI.txt.patch.json")
-
-    # Also adjust DATA_DIR for Spanish JSON step
     cli_mod.DATA_DIR = tmp_path / "data"
-    (cli_mod.DATA_DIR / "spanish").mkdir(parents=True)
+    spanish_dir = cli_mod.DATA_DIR / "spanish"
+    spanish_dir.mkdir(parents=True)
+
+    translated_content = '\tKEY_ONE\t=\t"Hola"\n\tKEY_TWO\t=\t"Mundo"\n'
+    (spanish_dir / "UI.txt").write_text(translated_content, encoding="utf-8")
 
     runner = CliRunner()
 
-    # Apply the patch
+    # Apply the translation
     result = runner.invoke(main, ["apply", "--install", str(install)])
     assert result.exit_code == 0
     assert "Backup" in result.output
     assert "UI.txt" in result.output
 
-    # Verify English file was patched
-    patched = parse_txt(ui_path.read_text(encoding="utf-8"))
-    assert patched["KEY_ONE"] == "Hola"
-    assert patched["KEY_TWO"] == "World"
+    # Verify English file now has Spanish content
+    patched = ui_path.read_text(encoding="utf-8")
+    assert "Hola" in patched
+    assert "Mundo" in patched
 
     # Verify backup exists with original content
     backup_path = english_dir.parent / "english.backup" / "UI.txt"
     assert backup_path.exists()
-    backup = parse_txt(backup_path.read_text(encoding="utf-8"))
-    assert backup["KEY_ONE"] == "Hello"
+    backup = backup_path.read_text(encoding="utf-8")
+    assert "Hello" in backup
 
     # Revert
     result = runner.invoke(main, ["revert", "--install", str(install)])
     assert result.exit_code == 0
 
     # Verify restoration
-    restored = parse_txt(ui_path.read_text(encoding="utf-8"))
-    assert restored["KEY_ONE"] == "Hello"
-    assert restored["KEY_TWO"] == "World"
+    restored = ui_path.read_text(encoding="utf-8")
+    assert "Hello" in restored
+    assert "Mundo" not in restored
