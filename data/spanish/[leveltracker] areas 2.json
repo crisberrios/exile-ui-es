@@ -2,7 +2,7 @@
 	[
 		{
 			"id": "g1_1",
-			"name": "the riverbank"
+			"name": "el riverbank"
 		},
 		{
 			"id": "g1_town",
@@ -19,7 +19,7 @@
 		},
 		{
 			"id": "g1_4",
-			"name": "the grelwood",
+			"name": "el grelwood",
 			"recommendation": "2 | 2"
 		},
 		{
@@ -34,17 +34,17 @@
 		},
 		{
 			"id": "g1_7",
-			"name": "cemetery of eternals",
+			"name": "cemetery de eternals",
 			"recommendation": "5 | 6"
 		},
 		{
 			"id": "g1_8",
-			"name": "mausoleum of praetor",
+			"name": "mausoleum de praetor",
 			"recommendation": "7 | 7"
 		},
 		{
 			"id": "g1_9",
-			"name": "tomb of consort",
+			"name": "tomb de consort",
 			"recommendation": "6 | 7"
 		},
 		{
@@ -94,7 +94,7 @@
 		},
 		{
 			"id": "g2_2",
-			"name": "traitor's passage",
+			"name": "traitor's pasaje",
 			"recommendation": "16.5 | 17.5"
 		},
 		{
@@ -133,7 +133,7 @@
 		},
 		{
 			"id": "g2_6",
-			"name": "valley of the titans",
+			"name": "valley de el titans",
 			"recommendation": "22.5 | 23.5"
 		},
 		{
@@ -148,12 +148,12 @@
 		},
 		{
 			"id": "g2_9_1",
-			"name": "path of mourning",
+			"name": "camino de mourning",
 			"recommendation": "25 | 26"
 		},
 		{
 			"id": "g2_9_2",
-			"name": "spires of deshar",
+			"name": "spires de deshar",
 			"recommendation": "26 | 27"
 		},
 		{
@@ -168,16 +168,16 @@
 		},
 		{
 			"id": "g2_12",
-			"name": "the dreadnought",
+			"name": "el dreadnought",
 			"recommendation": "27 | 28.5"
 		},
 		{
 			"id": "g2_13",
-			"name": "trial of sekhemas"
+			"name": "prueba de sekhemas"
 		},
 		{
 			"id": "ExpeditionSubArea_Kalguur_Act2",
-			"name": "skull of the titan"
+			"name": "skull de el titan"
 		}
 	],
 	[
@@ -207,7 +207,7 @@
 		},
 		{
 			"id": "g3_3",
-			"name": "jungle ruins",
+			"name": "jungle ruinas",
 			"recommendation": "29 | 30"
 		},
 		{
@@ -242,16 +242,16 @@
 		},
 		{
 			"id": "g3_10_airlock",
-			"name": "temple of chaos"
+			"name": "temple de chaos"
 		},
 		{
 			"id": "g3_11",
-			"name": "apex of filth",
+			"name": "apex de filth",
 			"recommendation": "36 | 37"
 		},
 		{
 			"id": "g3_12",
-			"name": "temple of kopec",
+			"name": "temple de kopec",
 			"recommendation": "37 | 38"
 		},
 		{
@@ -281,7 +281,7 @@
 		},
 		{
 			"id": "g4_1_1",
-			"name": "isle of kin",
+			"name": "isle de kin",
 			"recommendation": "41 | 41.5"
 		},
 		{
@@ -311,21 +311,21 @@
 		},
 		{
 			"id": "g4_4_1",
-			"name": "eye of hinekora",
+			"name": "eye de hinekora",
 			"recommendation": "45 | 46"
 		},
 		{
 			"id": "g4_4_2",
-			"name": "halls of the dead",
+			"name": "halls de el dead",
 			"recommendation": "46 | 47"
 		},
 		{
 			"id": "g4_4_3",
-			"name": "trial of the ancestors"
+			"name": "prueba de el ancestors"
 		},
 		{
 			"id": "g4_5_1",
-			"name": "abandoned prison",
+			"name": "abandoned prisión",
 			"recommendation": "43 | 44"
 		},
 		{
@@ -349,7 +349,7 @@
 		},
 		{
 			"id": "g4_10",
-			"name": "the excavation",
+			"name": "el excavation",
 			"recommendation": "47 | 48"
 		},
 		{
@@ -363,7 +363,7 @@
 		},
 		{
 			"id": "g4_11_2",
-			"name": "heart of the tribe",
+			"name": "heart de el tribe",
 			"recommendation": "49 | 49"
 		},
 		{
@@ -374,7 +374,7 @@
 	[
 		{
 			"id": "p1_town",
-			"name": "the refuge"
+			"name": "el refuge"
 		},
 		{
 			"id": "p1_1",
@@ -382,11 +382,11 @@
 		},
 		{
 			"id": "p1_2",
-			"name": "stones of serle"
+			"name": "stones de serle"
 		},
 		{
 			"id": "p1_3",
-			"name": "the blackwood"
+			"name": "el blackwood"
 		},
 		{
 			"id": "p1_4",
@@ -412,7 +412,7 @@
 		},
 		{
 			"id": "p2_2",
-			"name": "pools of khatal"
+			"name": "pools de khatal"
 		},
 		{
 			"id": "p2_3",
@@ -434,7 +434,7 @@
 	[
 		{
 			"id": "p3_town",
-			"name": "the glade"
+			"name": "el glade"
 		},
 		{
 			"id": "p3_1",

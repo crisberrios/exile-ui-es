@@ -12,17 +12,17 @@
 		{
 			"id": "1_1_2",
 			"lvl": 2,
-			"name": "The Coast"
+			"name": "la costa "
 		},
 		{
 			"id": "1_1_2a",
 			"lvl": 3,
-			"name": "Tidal Island"
+			"name": "isla de la marea "
 		},
 		{
 			"id": "1_1_3",
 			"lvl": 4,
-			"name": "Mud Flats"
+			"name": "llanuras fangosas "
 		},
 		{
 			"id": "1_1_3a",
@@ -32,122 +32,122 @@
 		{
 			"id": "1_1_4_1",
 			"lvl": 5,
-			"name": "Submerged Passage"
+			"name": "pasaje sumergido "
 		},
 		{
 			"id": "1_1_4_0",
 			"lvl": 6,
-			"name": "Flooded Depths"
+			"name": "profundidades inundadas "
 		},
 		{
 			"id": "1_1_5",
 			"lvl": 6,
-			"name": "The Ledge"
+			"name": "el saliente "
 		},
 		{
 			"id": "1_1_6",
 			"lvl": 7,
-			"name": "The Climb"
+			"name": "la escalada "
 		},
 		{
 			"id": "1_1_7_1",
 			"lvl": 8,
-			"name": "Lower Prison",
-			"map_name": "The Prison"
+			"name": "prisión inferior ",
+			"map_name": "el prisión"
 		},
 		{
 			"id": "1_1_7_2",
 			"lvl": 9,
-			"name": "Upper Prison"
+			"name": "prisión superior "
 		},
 		{
 			"id": "1_1_8",
 			"lvl": 10,
-			"name": "Prisoner's Gate"
+			"name": "puerta del prisionero "
 		},
 		{
 			"id": "1_1_9",
 			"lvl": 11,
-			"name": "Ship Graveyard"
+			"name": "cementerio de barcos "
 		},
 		{
 			"id": "1_1_9a",
 			"lvl": 12,
-			"name": "Ship Graveyard Cave"
+			"name": "cueva del cementerio de barcos  "
 		},
 		{
 			"id": "1_1_11_1",
-			"name": "Cavern of Wrath",
+			"name": "caverna de la ira  ",
 			"lvl": 12,
 			"map_name": "Merveil's Caverns"
 		},
 		{
 			"id": "1_1_11_2",
 			"lvl": 13,
-			"name": "Cavern of Anger"
+			"name": "caverna de la furia  "
 		}
 	],
 	[
 		{
 			"id": "1_2_1",
 			"lvl": 13,
-			"name": "Southern Forest"
+			"name": "bosque del sur "
 		},
 		{
 			"id": "1_2_town",
-			"name": "Forest Encampment"
+			"name": "campamento del bosque "
 		},
 		{
 			"id": "1_2_2",
 			"lvl": 14,
-			"name": "Old Fields"
+			"name": "campos viejos "
 		},
 		{
 			"id": "1_2_2a",
 			"lvl": 15,
-			"name": "The Den"
+			"name": "la guarida "
 		},
 		{
 			"id": "1_2_3",
 			"lvl": 15,
-			"name": "The Crossroads"
+			"name": "el cruce "
 		},
 		{
 			"id": "1_2_4",
 			"lvl": 16,
-			"name": "Broken Bridge"
+			"name": "puente roto "
 		},
 		{
 			"id": "1_2_6_1",
 			"lvl": 15,
-			"name": "Chamber of Sins (1)",
-			"map_name": "Chamber of Sins"
+			"name": "cámara de los pecados   (1)",
+			"map_name": "cámara de los pecados  "
 		},
 		{
 			"id": "1_2_6_2",
 			"lvl": 16,
-			"name": "Chamber of Sins (2)"
+			"name": "cámara de los pecados   (2)"
 		},
 		{
 			"id": "1_2_15",
 			"lvl": 16,
-			"name": "Fellshrine Ruins"
+			"name": "ruinas del santuario caído "
 		},
 		{
 			"id": "1_2_5_1",
 			"lvl": 17,
-			"name": "The Crypt (1)",
-			"map_name": "The Crypt"
+			"name": "la cripta  (1)",
+			"map_name": "la cripta "
 		},
 		{
 			"id": "1_2_5_2",
 			"lvl": 18,
-			"name": "The Crypt (2)"
+			"name": "la cripta  (2)"
 		},
 		{
 			"id": "1_2_7",
 			"lvl": 15,
-			"name": "The Riverways"
+			"name": "las vías fluviales "
 		},
 		{
 			"id": "1_2_8",
@@ -157,22 +157,22 @@
 		{
 			"id": "1_2_9",
 			"lvl": 17,
-			"name": "Western Forest"
+			"name": "bosque occidental "
 		},
 		{
 			"id": "1_2_10",
 			"lvl": 18,
-			"name": "Weaver's Chambers"
+			"name": "cámaras de la tejedora "
 		},
 		{
 			"id": "1_2_11",
 			"lvl": 20,
-			"name": "Vaal Ruins"
+			"name": "ruinas vaal "
 		},
 		{
 			"id": "1_2_12",
 			"lvl": 19,
-			"name": "The Wetlands"
+			"name": "los humedales "
 		},
 		{
 			"id": "1_2_13",
@@ -182,8 +182,8 @@
 		{
 			"id": "1_2_14_2",
 			"lvl": 22,
-			"name": "The Caverns",
-			"crafting_recipe": "Vaal Skill Damage I"
+			"name": "las cavernas ",
+			"crafting_recipe": "Vaal habilidad Damage I"
 		},
 		{
 			"id": "1_2_14_3",
@@ -196,7 +196,7 @@
 		{
 			"id": "1_3_1",
 			"lvl": 23,
-			"name": "City of Sarn",
+			"name": "City de Sarn",
 			"crafting_recipe": "Movement Speed I"
 		},
 		{
@@ -206,35 +206,35 @@
 		{
 			"id": "1_3_2",
 			"lvl": 24,
-			"name": "The Slums"
+			"name": "el Slums"
 		},
 		{
 			"id": "1_3_3_1",
 			"lvl": 25,
-			"name": "The Crematorium",
+			"name": "el Crematorium",
 			"crafting_recipe": "Defences I"
 		},
 		{
 			"id": "1_3_10_1",
 			"lvl": 26,
-			"name": "The Sewers",
+			"name": "el Sewers",
 			"crafting_recipe": "Physical Damage I"
 		},
 		{
 			"id": "1_3_5",
 			"lvl": 26,
-			"name": "The Marketplace"
+			"name": "el mercado "
 		},
 		{
 			"id": "1_3_6",
 			"lvl": 27,
-			"name": "The Catacombs",
-			"crafting_recipe": "Elemental Damage with Attacks I"
+			"name": "las catacumbas ",
+			"crafting_recipe": "Elemental Damage con Attacks I"
 		},
 		{
 			"id": "1_3_7",
 			"lvl": 27,
-			"name": "The Battlefront"
+			"name": "el frente de batalla "
 		},
 		{
 			"id": "1_3_8_1",
@@ -245,12 +245,12 @@
 			"id": "1_3_8_2",
 			"lvl": 28,
 			"name": "Solaris Temple (2)",
-			"crafting_recipe": "Fire Damage I"
+			"crafting_recipe": "fuego Damage I"
 		},
 		{
 			"id": "1_3_9",
 			"lvl": 29,
-			"name": "The Docks"
+			"name": "los muelles "
 		},
 		{
 			"id": "1_3_13",
@@ -278,23 +278,23 @@
 		{
 			"id": "1_3_17_1",
 			"lvl": 30,
-			"name": "The Library"
+			"name": "la biblioteca "
 		},
 		{
 			"id": "1_3_17_2",
 			"lvl": 31,
-			"name": "The Archives",
-			"crafting_recipe": "Life and Mana Regeneration I"
+			"name": "el Archives",
+			"crafting_recipe": "Life y Mana Regeneration I"
 		},
 		{
 			"id": "1_3_18_1",
 			"lvl": 32,
-			"name": "Sceptre of God"
+			"name": "cetro de dios"
 		},
 		{
 			"id": "1_3_18_2",
 			"lvl": 33,
-			"name": "Upper Sceptre of God"
+			"name": "Upper cetro de dios"
 		},
 		{
 			"id": "Labyrinth_Airlock",
@@ -305,28 +305,28 @@
 		{
 			"id": "1_4_1",
 			"lvl": 33,
-			"name": "The Aqueduct"
+			"name": "el acueducto "
 		},
 		{
 			"id": "1_4_town",
-			"name": "Highgate"
+			"name": "puerta alta"
 		},
 		{
 			"id": "1_4_2",
 			"lvl": 34,
 			"name": "Dried Lake",
-			"crafting_recipe": "Attack, Cast and Warcry Speed I"
+			"crafting_recipe": "Attack, Cast y Warcry Speed I"
 		},
 		{
 			"id": "1_4_3_1",
 			"lvl": 34,
-			"name": "The Mines (1)",
+			"name": "las minas  (1)",
 			"crafting_recipe": "Socket Colours"
 		},
 		{
 			"id": "1_4_3_2",
 			"lvl": 35,
-			"name": "The Mines (2)"
+			"name": "las minas  (2)"
 		},
 		{
 			"id": "1_4_3_3",
@@ -343,40 +343,40 @@
 			"id": "1_4_4_3",
 			"lvl": 38,
 			"name": "Kaom's Stronghold",
-			"crafting_recipe": "Socket Links - 2 to 4 Linked Sockets"
+			"crafting_recipe": "Socket Links - 2 a 4 Linked Sockets"
 		},
 		{
 			"id": "1_4_5_1",
 			"lvl": 37,
-			"name": "Daresso's Dream"
+			"name": "el sueño de daresso "
 		},
 		{
 			"id": "1_4_5_2",
 			"lvl": 38,
-			"name": "Grand Arena",
-			"crafting_recipe": "Socket Numbers - 2 to 4 Sockets"
+			"name": "Grand arena",
+			"crafting_recipe": "Socket Numbers - 2 a 4 Sockets"
 		},
 		{
 			"id": "1_4_6_1",
 			"lvl": 38,
-			"name": "Belly of the Beast (1)"
+			"name": "Belly de el Beast (1)"
 		},
 		{
 			"id": "1_4_6_2",
 			"lvl": 39,
-			"name": "Belly of the Beast (2)",
+			"name": "Belly de el Beast (2)",
 			"crafting_recipe": "Elemental Resistances II"
 		},
 		{
 			"id": "1_4_6_3",
 			"lvl": 40,
-			"name": "The Harvest"
+			"name": "la cosecha "
 		},
 		{
 			"id": "1_4_7",
 			"lvl": 40,
-			"name": "The Ascent",
-			"crafting_recipe": "Ailment, Stun and Curse Mitigation I"
+			"name": "el Ascent",
+			"crafting_recipe": "Ailment, Stun y Curse Mitigation I"
 		},
 		{
 			"id": "Labyrinth_Airlock",
@@ -411,8 +411,8 @@
 		{
 			"id": "1_5_5",
 			"lvl": 43,
-			"name": "Chamber of Innocence",
-			"crafting_recipe": "Movement Speed and Exerted Attacks II"
+			"name": "Chamber de Innocence",
+			"crafting_recipe": "Movement Speed y Exerted Attacks II"
 		},
 		{
 			"id": "1_5_4b",
@@ -427,13 +427,13 @@
 		{
 			"id": "1_5_6",
 			"lvl": 44,
-			"name": "The Ossuary",
+			"name": "el osario ",
 			"crafting_recipe": "Physical Damage II"
 		},
 		{
 			"id": "1_5_7",
 			"lvl": 44,
-			"name": "The Reliquary",
+			"name": "el relicario ",
 			"crafting_recipe": "Accuracy I"
 		},
 		{
@@ -455,17 +455,17 @@
 		{
 			"id": "2_6_2",
 			"lvl": 45,
-			"name": "The Coast"
+			"name": "la costa "
 		},
 		{
 			"id": "2_6_3",
 			"lvl": 45,
-			"name": "Tidal Island"
+			"name": "isla de la marea "
 		},
 		{
 			"id": "2_6_4",
 			"lvl": 46,
-			"name": "Mud Flats"
+			"name": "llanuras fangosas "
 		},
 		{
 			"id": "2_6_5",
@@ -476,13 +476,13 @@
 		{
 			"id": "2_6_6",
 			"lvl": 46,
-			"name": "The Ridge"
+			"name": "el Ridge"
 		},
 		{
 			"id": "2_6_7_1",
 			"lvl": 47,
-			"name": "Lower Prison",
-			"map_name": "The Prison",
+			"name": "prisión inferior ",
+			"map_name": "el prisión",
 			"crafting_recipe": "Double Resistances I"
 		},
 		{
@@ -494,39 +494,39 @@
 		{
 			"id": "2_6_8",
 			"lvl": 47,
-			"name": "Prisoner's Gate"
+			"name": "puerta del prisionero "
 		},
 		{
 			"id": "2_6_9",
 			"lvl": 48,
-			"name": "Western Forest",
+			"name": "bosque occidental ",
 			"crafting_recipe": "Attributes II"
 		},
 		{
 			"id": "2_6_10",
 			"lvl": 48,
-			"name": "The Riverways"
+			"name": "las vías fluviales "
 		},
 		{
 			"id": "2_6_11",
 			"lvl": 48,
-			"name": "The Wetlands"
+			"name": "los humedales "
 		},
 		{
 			"id": "2_6_12",
 			"lvl": 49,
-			"name": "Southern Forest"
+			"name": "bosque del sur "
 		},
 		{
 			"id": "2_6_13",
 			"lvl": 49,
-			"name": "Cavern of Anger"
+			"name": "caverna de la furia  "
 		},
 		{
 			"id": "2_6_14",
 			"lvl": 49,
-			"name": "The Beacon",
-			"crafting_recipe": "Life and Mana II"
+			"name": "el Beacon",
+			"crafting_recipe": "Life y Mana II"
 		},
 		{
 			"id": "2_6_15",
@@ -537,40 +537,40 @@
 	[
 		{
 			"id": "2_7_town",
-			"name": "Bridge Encampment"
+			"name": "puente Encampment"
 		},
 		{
 			"id": "2_7_1",
 			"lvl": 50,
-			"name": "Broken Bridge"
+			"name": "puente roto "
 		},
 		{
 			"id": "2_7_2",
 			"lvl": 51,
-			"name": "The Crossroads"
+			"name": "el cruce "
 		},
 		{
 			"id": "2_7_3",
 			"lvl": 51,
-			"name": "Fellshrine Ruins"
+			"name": "ruinas del santuario caído "
 		},
 		{
 			"id": "2_7_4",
 			"lvl": 51,
-			"name": "The Crypt",
+			"name": "la cripta ",
 			"crafting_recipe": "Damage over Time I"
 		},
 		{
 			"id": "2_7_5_1",
 			"lvl": 52,
-			"name": "Chamber of Sins (1)",
-			"map_name": "Chamber of Sins",
+			"name": "cámara de los pecados   (1)",
+			"map_name": "cámara de los pecados  ",
 			"crafting_recipe": "Lightning Damage II"
 		},
 		{
 			"id": "2_7_5_2",
 			"lvl": 52,
-			"name": "Chamber of Sins (2)",
+			"name": "cámara de los pecados   (2)",
 			"crafting_recipe": "Mana Regen I"
 		},
 		{
@@ -581,7 +581,7 @@
 		{
 			"id": "2_7_6",
 			"lvl": 53,
-			"name": "The Den"
+			"name": "la guarida "
 		},
 		{
 			"id": "2_7_7",
@@ -597,12 +597,12 @@
 			"id": "2_7_9",
 			"lvl": 53,
 			"name": "Dread Thicket",
-			"crafting_recipe": "Fire Damage II"
+			"crafting_recipe": "fuego Damage II"
 		},
 		{
 			"id": "2_7_10",
 			"lvl": 54,
-			"name": "The Causeway",
+			"name": "el Causeway",
 			"crafting_recipe": "Cold Damage II"
 		},
 		{
@@ -613,12 +613,12 @@
 		{
 			"id": "2_7_12_1",
 			"lvl": 54,
-			"name": "Temple of Decay (1)"
+			"name": "Temple de Decay (1)"
 		},
 		{
 			"id": "2_7_12_2",
 			"lvl": 55,
-			"name": "Temple of Decay (2)",
+			"name": "Temple de Decay (2)",
 			"crafting_recipe": "Chaos Damage I"
 		},
 		{
@@ -657,7 +657,7 @@
 			"id": "2_8_5",
 			"lvl": 57,
 			"name": "Bath House",
-			"crafting_recipe": "Flask Duration I"
+			"crafting_recipe": "frasco Duration I"
 		},
 		{
 			"id": "2_8_4",
@@ -683,12 +683,12 @@
 		{
 			"id": "2_8_8",
 			"lvl": 57,
-			"name": "The Quay"
+			"name": "el Quay"
 		},
 		{
 			"id": "2_8_9",
 			"lvl": 57,
-			"name": "Grain Gate"
+			"name": "Grain portón"
 		},
 		{
 			"id": "2_8_10",
@@ -709,12 +709,12 @@
 			"id": "2_8_12_2",
 			"lvl": 59,
 			"name": "Solaris Temple (2)",
-			"crafting_recipe": "Traps and Mines I"
+			"crafting_recipe": "Traps y Mines I"
 		},
 		{
 			"id": "2_8_13",
 			"lvl": 60,
-			"name": "Harbour Bridge"
+			"name": "Harbour puente"
 		},
 		{
 			"id": "2_8_14",
@@ -726,32 +726,32 @@
 		{
 			"id": "2_9_1",
 			"lvl": 61,
-			"name": "Blood Aqueduct"
+			"name": "sangre Aqueduct"
 		},
 		{
 			"id": "2_9_town",
-			"name": "Highgate"
+			"name": "puerta alta"
 		},
 		{
 			"id": "2_9_2",
 			"lvl": 61,
-			"name": "The Descent"
+			"name": "el Descent"
 		},
 		{
 			"id": "2_9_3",
 			"lvl": 61,
 			"name": "Vastiri Desert",
-			"crafting_recipe": "Attack and Cast Speed II"
+			"crafting_recipe": "Attack y Cast Speed II"
 		},
 		{
 			"id": "2_9_4",
 			"lvl": 61,
-			"name": "The Oasis"
+			"name": "el Oasis"
 		},
 		{
 			"id": "2_9_5",
 			"lvl": 62,
-			"name": "The Foothills"
+			"name": "el Foothills"
 		},
 		{
 			"id": "2_9_6",
@@ -762,25 +762,25 @@
 		{
 			"id": "2_9_7",
 			"lvl": 62,
-			"name": "The Tunnel",
+			"name": "el Tunnel",
 			"crafting_recipe": "All Attributes II"
 		},
 		{
 			"id": "2_9_8",
 			"lvl": 63,
-			"name": "The Quarry",
+			"name": "el Quarry",
 			"crafting_recipe": "Physical Damage III"
 		},
 		{
 			"id": "2_9_9",
 			"lvl": 63,
-			"name": "The Refinery",
-			"crafting_recipe": "Trigger a Socketed Spell when you Use a Skill"
+			"name": "el Refinery",
+			"crafting_recipe": "Trigger a Socketed Spell when you usar a habilidad"
 		},
 		{
 			"id": "2_9_10_1",
 			"lvl": 63,
-			"name": "Belly of the Beast"
+			"name": "Belly de el Beast"
 		},
 		{
 			"id": "2_9_10_2",
@@ -806,7 +806,7 @@
 		{
 			"id": "2_10_8",
 			"lvl": 67,
-			"name": "The Reliquary"
+			"name": "el relicario "
 		},
 		{
 			"id": "2_10_7",
@@ -816,7 +816,7 @@
 		{
 			"id": "2_10_9",
 			"lvl": 67,
-			"name": "The Ossuary",
+			"name": "el osario ",
 			"crafting_recipe": "Chaos Damage II"
 		},
 		{
@@ -833,13 +833,13 @@
 		{
 			"id": "2_10_5",
 			"lvl": 66,
-			"name": "The Canals"
+			"name": "el Canals"
 		},
 		{
 			"id": "2_10_6",
 			"lvl": 67,
 			"name": "Feeding Trough",
-			"crafting_recipe": "Life and Mana III"
+			"crafting_recipe": "Life y Mana III"
 		},
 		{
 			"id": "Labyrinth_Airlock",
@@ -850,7 +850,7 @@
 		{
 			"id": "2_11_endgame_town",
 			"name": "Karui Shores",
-			"crafting_recipe": "Movement Speed and Flask Enchantments III"
+			"crafting_recipe": "Movement Speed y frasco Enchantments III"
 		}
 	]
 ]

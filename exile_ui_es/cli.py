@@ -13,6 +13,7 @@ from exile_ui_es.patcher import generate_patch, apply_patch, save_patch
 from exile_ui_es.translations.ui import translate_ui
 from exile_ui_es.translations.client import translate_client
 from exile_ui_es.translations.game_data import translate_game_data
+from exile_ui_es.translations.guide import translate_guide_file
 
 PROJECT_DIR = Path(__file__).parent.parent
 DATA_DIR = PROJECT_DIR / "data"
@@ -105,7 +106,11 @@ def translate(source, output):
     # Translate JSON files
     for json_file in src_dir.glob("*.json"):
         data = json.loads(json_file.read_text(encoding="utf-8"))
-        translated = translate_game_data(data, json_file.name)
+        # Leveling guide files use the instruction translator
+        if "[leveltracker]" in json_file.name.lower():
+            translated = translate_guide_file(data, json_file.name)
+        else:
+            translated = translate_game_data(data, json_file.name)
         out_path = out_dir / json_file.name
         out_path.write_text(
             json.dumps(translated, indent="\t", ensure_ascii=False),

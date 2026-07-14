@@ -1,20 +1,20 @@
 [
 	[
 		[
-			"kill hillock",
-			"enter areaid1_1_town ;; lioneye's watch"
+			"matar a hillock",
+			"entrar en areaid1_1_town ;; lioneye's watch"
 		],
 		[
-			"(img:quest) tarkleigh: <enemy_at_the_gate>",
-			"enter areaid1_1_2 ;; the coast"
+			"(img:quest)tarkleigh:  <enemy_at_the_gate>",
+			"entrar en areaid1_1_2 ;; the coast"
 		],
 		[
-			"leaguestart: activate (img:waypoint)",
-			"enter areaid1_1_3 ;; mud flats"
+			"leaguestart:activar  (img:waypoint)",
+			"entrar en areaid1_1_3 ;; mud flats"
 		],
 		[
-			"follow streams for (img:quest) (quest:3_glyphs)",
-			"enter (img:quest) areaid1_1_4_1 ;; submerged passage"
+			"seguir arroyos para  (img:quest) (quest:3_glyphs)",
+			"entrar en (img:quest) areaid1_1_4_1 ;; submerged passage"
 		],
 		{
 			"condition": [
@@ -22,8 +22,8 @@
 				"yes"
 			],
 			"lines": [
-				"(img:waypoint) to areaid1_1_2 ;; the coast",
-				"enter areaid1_1_2a ;; tidal island"
+				"(img:waypoint)a  areaid1_1_2 ;; the coast",
+				"entrar en areaid1_1_2a ;; tidal island"
 			]
 		},
 		{
@@ -32,9 +32,9 @@
 				"yes"
 			],
 			"lines": [
-				"follow (img:6) side of wall",
-				"(hint)__ see a ledge? follow (img:2) side",
-				"kill hailrake for (quest:chest) (lvl:4)",
+				"follow (img:6)lateralde pared  ",
+				"(hint)__ ver a saliente? follow (img:2)lateral ",
+				"matar a hailrake para (quest:chest) (lvl:4)",
 				"(color:cc99ff)relog: areaid1_1_town ;; lioneye's watch"
 			]
 		},
@@ -44,31 +44,31 @@
 				"yes"
 			],
 			"lines": [
-				"(img:quest) tarkleigh: <breaking_some_eggs1>, <breaking_some_eggs2>",
-				"(img:quest) nessa: <mercy_mission>",
-				"(img:waypoint) to areaid1_1_4_1 ;; submerged passage"
+				"(img:quest)tarkleigh:  <breaking_some_eggs1>, <breaking_some_eggs2>",
+				"(img:quest)nessa:  <mercy_mission>",
+				"(img:waypoint)a  areaid1_1_4_1 ;; submerged passage"
 			]
 		},
 		[
-			"twinkrun: (color:ff00ff)buy_gems in (img:hideout) (color:fec076)your_hideout || lilly: <mercy_mission>, <breaking_some_eggs1>, <breaking_some_eggs2> ;; only shows with imported pob",
-			"find & enter areaid1_1_4_0 ;; flooded depths",
-			"(hint)__ (img:6) / (img:1) before (color:cc99ff)bridge, rarely (img:3)"
+			"twinkrun: (color:ff00ff)buy_gems en (img:hideout) (color:fec076)your_hideout || lilly: <mercy_mission>, <breaking_some_eggs1>, <breaking_some_eggs2> ;; only shows with imported pob",
+			"buscar y entrar en   areaid1_1_4_0 ;; flooded depths",
+			"(hint)__ (img:6)/  (img:1)antes de  (color:cc99ff)puente, raramente (img:3)"
 		],
 		[
-			"find & kill dweller (essence)",
-			"(hint)__ (color:cc99ff)start & arena:dweller : opposite corners",
-			"use (img:arena) boat: areaid1_1_4_1 ;; submerged passage"
+			"buscar y matar dweller   (essence)",
+			"(hint)__ (color:cc99ff)comenzar y arena:dweller:opposite esquinas  ",
+			"usar (img:arena)bote:  areaid1_1_4_1 ;; submerged passage"
 		],
 		[
-			"find & enter areaid1_1_5 ;; the ledge"
+			"buscar y entrar en   areaid1_1_5 ;; the ledge"
 		],
 		[
-			"follow wall to areaid1_1_6 ;; the climb",
-			"(hint)__ safer route: follow cliff"
+			"seguir la pared a  areaid1_1_6 ;; the climb",
+			"(hint)__ más seguro route: seguir el acantilado "
 		],
 		[
-			"follow edge to areaid1_1_7_1 ;; lower prison",
-			"leaguestart: (img:waypoint) to areaid1_1_town (img:town) ;; lioneye's watch"
+			"seguir el borde a  areaid1_1_7_1 ;; lower prison",
+			"leaguestart: (img:waypoint)a  areaid1_1_town (img:town) ;; lioneye's watch"
 		],
 		{
 			"condition": [
@@ -76,129 +76,129 @@
 				"yes"
 			],
 			"lines": [
-				"(img:quest) tarkleigh: (quest:book)",
-				"(img:quest) nessa: <the_caged_brute1>",
-				"(img:waypoint) to areaid1_1_7_1 ;; lower prison"
+				"(img:quest)tarkleigh:  (quest:book)",
+				"(img:quest)nessa:  <the_caged_brute1>",
+				"(img:waypoint)a  areaid1_1_7_1 ;; lower prison"
 			]
 		},
 		[
-			"leaguestart: complete (img:lab) trial",
-			"(hint)__ often (img:1) in the zone",
-			"enter areaid1_1_7_2 ;; upper prison"
+			"leaguestart:completar  (img:lab)prueba ",
+			"(hint)__ a menudo (img:1)en la zona   ",
+			"entrar en areaid1_1_7_2 ;; upper prison"
 		],
 		[
-			"leaguestart: optional: find chemist's strongbox",
-			"(hint)__ can drop quicksilver flask",
-			"kill brutus (lvl:8-10)",
+			"leaguestart: optional:buscarchemist's caja fuerte  ",
+			"(hint)__ can soltar mercurio frasco",
+			"matar a brutus (lvl:8-10)",
 			"(color:cc99ff)relog: areaid1_1_town ;; lioneye's watch"
 		],
 		[
-			"twinkrun: (img:quest) nessa: <the_caged_brute1>",
-			"twinkrun: (img:quest) tarkleigh: (quest:book)",
-			"(img:quest) tarkleigh: <the_caged_brute2>",
-			"leaguestart: optional: spare quicksilver? (color:cc99ff)vendor:",
-			"(hint)__ qs-flask + aug + (ms) boots",
-			"(img:waypoint) to areaid1_1_8 ;; prisoner's gate"
+			"twinkrun: (img:quest)nessa:  <the_caged_brute1>",
+			"twinkrun: (img:quest)tarkleigh:  (quest:book)",
+			"(img:quest)tarkleigh:  <the_caged_brute2>",
+			"leaguestart: optional:guardarmercurio?   (color:cc99ff)vendedor:",
+			"(hint)__ qs-flask + aug + (ms)botas ",
+			"(img:waypoint)a  areaid1_1_8 ;; prisoner's gate"
 		],
 		[
-			"ledge near road leads to passage",
-			"follow wall to areaid1_1_9 ;; ship graveyard"
+			"saliente cerca camino lleva a pasaje ",
+			"seguir la pared a  areaid1_1_9 ;; ship graveyard"
 		],
 		[
-			"follow wall, (color:ff00ff)find_2 (img:arena) exits:",
-			"(hint)_ - if (img:arena) cavern_of_wrath first: (img:in-out2) (color:ffffff)for (img:waypoint)",
-			"(hint)_ - else: set (img:portal) || enter (img:arena) cavern, (img:waypoint) to (img:town)",
-			"(enter (img:portal) ,) enter areaid1_1_9a ;; ship graveyard cavefollow wall, find (img:arena) (color:99ccff)cavern & (img:arena) cave :"
+			"seguir la pared,  (color:ff00ff)find_2 (img:arena)exits: ",
+			"(hint)_ - si (img:arena)cavern_of_wrathprimero:   (img:in-out2) (color:ffffff)para (img:waypoint)",
+			"(hint)_ - else:colocar  (img:portal)||entrar en   (img:arena)caverna,  (img:waypoint)a  (img:town)",
+			"(enter (img:portal),)entrar en   areaid1_1_9a ;; ship graveyard cavefollow wall, find (img:arena) (color:99ccff)cavern & (img:arena) cave :"
 		],
 		[
-			"find (img:quest) (quest:slave_girl) for (quest:allflame)",
-			"(hint)__ (color:cc99ff)start & (quest:girl) : opposite corners",
-			"enter areaid1_1_9 ;; ship graveyard"
+			"buscar (img:quest) (quest:slave_girl)para  (quest:allflame)",
+			"(hint)__ (color:cc99ff)comenzar y (quest:girl):opposite esquinas  ",
+			"entrar en areaid1_1_9 ;; ship graveyard"
 		],
 		[
-			"kill fairgraves",
+			"matar a fairgraves",
 			"(color:cc99ff)relog: areaid1_1_town ;; lioneye's watch"
 		],
 		[
-			"(img:quest) bestel: (quest:book)",
-			"(img:quest) nessa: <the_siren's_cadence>",
-			"(img:waypoint) to areaid1_1_11_1 ;; cavern of wrath"
+			"(img:quest)bestel:  (quest:book)",
+			"(img:quest)nessa:  <the_siren's_cadence>",
+			"(img:waypoint)a  areaid1_1_11_1 ;; cavern of wrath"
 		],
 		[
-			"find & enter areaid1_1_11_2 ;; cavern of anger",
-			"(hint)__ flow of the water points to it"
+			"buscar y entrar en   areaid1_1_11_2 ;; cavern of anger",
+			"(hint)__ flujo de el agua apunta a it"
 		],
 		[
-			"enter (img:arena) lair, kill merveil (lvl:11-13)",
-			"(hint)__ flow of the water points to it",
-			"enter areaid1_2_1 ;; southern forest"
+			"entrar en (img:arena)guarida,matar a merveil   (lvl:11-13)",
+			"(hint)__ flujo de el agua apunta a it",
+			"entrar en areaid1_2_1 ;; southern forest"
 		]
 	],
 	[
 		[
-			"wall leads to areaid1_2_town ;; forest encampment"
+			"pared lleva a  areaid1_2_town ;; forest encampment"
 		],
 		[
-			"go (img:1) to areaid1_2_2 ;; old fields"
+			"ir (img:1)a  areaid1_2_2 ;; old fields"
 		],
 		[
-			"leaguestart: optional: (img:quest) (color:8787fe)flask / <belt> : find (img:arena) den, set (img:portal) ;; the den",
-			"(hint)__ usually located near the road",
-			"follow road: areaid1_2_3 ;; the crossroads"
+			"leaguestart: optional: (img:quest) (color:8787fe)frasco / <belt>:buscar   (img:arena)guarida,colocar   (img:portal) ;; the den",
+			"(hint)__ generalmente located cerca el camino",
+			"seguir el camino:  areaid1_2_3 ;; the crossroads"
 		],
 		[
-			"follow road: get (img:waypoint)",
-			"leaguestart: optional: (img:quest) (color:8787fe)flask / <belt> : (img:waypoint) to (img:town)",
-			"(hint)_ - enter (img:portal) || enter areaid1_2_2a",
-			"(hint)_ - kill beast || (color:cc99ff)relog: (img:quest) yeena",
-			"go (img:7): areaid1_2_6_1 ;; chamber of sins (1)"
+			"seguir el camino: obtener  (img:waypoint)",
+			"leaguestart: optional: (img:quest) (color:8787fe)frasco / <belt>:  (img:waypoint)a  (img:town)",
+			"(hint)_ - entrar en (img:portal)||entrar en   areaid1_2_2a",
+			"(hint)_ - matar beast || (color:cc99ff)relog: (img:quest)yeena ",
+			"ir (img:7): areaid1_2_6_1 ;; chamber of sins (1)"
 		],
 		[
-			"enter areaid1_2_6_2 ;; chamber of sins (2)",
-			"(hint)__ (img:waypoint) in center points to the exit"
+			"entrar en areaid1_2_6_2 ;; chamber of sins (2)",
+			"(hint)__ (img:waypoint)encentro apunta a el salida  "
 		],
 		[
-			"leaguestart: complete (img:lab) trial",
-			"kill fidelitas (lvl:14-15) || take (img:quest) (quest:gem)",
-			"(hint)__ (color:cc99ff)start & (color:cc99ff)arena: opposite corners",
+			"leaguestart:completar  (img:lab)prueba ",
+			"matar a fidelitas (lvl:14-15)||tomar   (img:quest) (quest:gem)",
+			"(hint)__ (color:cc99ff)comenzar y (color:cc99ff)arena: opposite esquinas",
 			"(color:cc99ff)relog: areaid1_2_town ;; forest encampment"
 		],
 		[
-			"(img:quest) greust: <intruders_in_black>",
-			"(img:quest) helena: <invite_to_hideout>",
-			"(img:waypoint) to areaid1_2_3 ;; the crossroads"
+			"(img:quest)greust:  <intruders_in_black>",
+			"(img:quest)helena:  <invite_to_hideout>",
+			"(img:waypoint)a  areaid1_2_3 ;; the crossroads"
 		],
 		[
-			"go (img:3) to areaid1_2_15 ;; fellshrine ruins",
-			"follow road: areaid1_2_5_1 ;; the crypt (1)"
+			"ir (img:3)a  areaid1_2_15 ;; fellshrine ruins",
+			"seguir el camino:  areaid1_2_5_1 ;; the crypt (1)"
 		],
 		[
-			"leaguestart: complete (img:lab) trial",
-			"find & enter areaid1_2_5_2 ;; the crypt (2)",
-			"(hint)__ (color:cc99ff)start & (color:cc99ff)exit: opposite corners"
+			"leaguestart:completar  (img:lab)prueba ",
+			"buscar y entrar en   areaid1_2_5_2 ;; the crypt (2)",
+			"(hint)__ (color:cc99ff)comenzar y (color:cc99ff)salida: opposite esquinas"
 		],
 		[
-			"find (img:quest) (quest:altar) for (quest:golden_hand)",
-			"(hint)__ (color:cc99ff)start & (quest:altar): opposite corners",
+			"buscar (img:quest) (quest:altar)para  (quest:golden_hand)",
+			"(hint)__ (color:cc99ff)comenzar y (quest:altar): opposite esquinas",
 			"(color:cc99ff)relog: areaid1_2_town ;; forest encampment"
 		],
 		[
-			"(img:quest) yeena: (quest:book)",
-			"go (img:5) to areaid1_2_7 ;; the riverways"
+			"(img:quest)yeena:  (quest:book)",
+			"ir (img:5)a  areaid1_2_7 ;; the riverways"
 		],
 		[
-			"follow road: get (img:waypoint)",
-			"follow road: areaid1_2_9 ;; western forest"
+			"seguir el camino: obtener  (img:waypoint)",
+			"seguir el camino:  areaid1_2_9 ;; western forest"
 		],
 		[
-			"follow road: get (img:waypoint)",
-			"enter areaid1_2_10 ;; weaver's chambers",
-			"(hint)__ search the side without (img:waypoint)"
+			"seguir el camino: obtener  (img:waypoint)",
+			"entrar en areaid1_2_10 ;; weaver's chambers",
+			"(hint)__ buscar el lateral without (img:waypoint)"
 		],
 		[
-			"kill weaver for (quest:spike) (lvl:16)",
-			"(hint)__ follow (img:6) edge. if it doesn't",
-			"(hint)__ go further (img:6) or (img:4), go (img:1)",
+			"matar a weaver para (quest:spike) (lvl:16)",
+			"(hint)__ follow (img:6)borde.si it doesn't  ",
+			"(hint)__ ir further (img:6)o  (img:4), ir (img:1)",
 			"(color:cc99ff)relog: areaid1_2_town ;; forest encampment"
 		],
 		{
@@ -211,8 +211,8 @@
 				]
 			],
 			"lines": [
-				"(img:quest) silk: <sharp_and_cruel>",
-				"(img:waypoint) to areaid1_2_3 ;; the crossroads"
+				"(img:quest)silk:  <sharp_and_cruel>",
+				"(img:waypoint)a  areaid1_2_3 ;; the crossroads"
 			]
 		},
 		{
@@ -225,7 +225,7 @@
 				]
 			],
 			"lines": [
-				"go (img:1) to areaid1_2_4 ;; broken bridge"
+				"ir (img:1)a  areaid1_2_4 ;; broken bridge"
 			]
 		},
 		{
@@ -238,10 +238,10 @@
 				]
 			],
 			"lines": [
-				"follow the road",
-				"leaguestart: optional: jewellery + 3 rogue exiles",
-				"(hint)__ look for (color:cc99ff)ruins near (img:waypoint)",
-				"(color:red)kill arena:kraityn for (quest:amulet)",
+				"seguir el camino  ",
+				"leaguestart: optional:joyería+ 3 renegado exiliados  ",
+				"(hint)__ buscar  (color:cc99ff)ruinas cerca (img:waypoint)",
+				"(color:red)matar arena:kraitynpara  (quest:amulet)",
 				"(color:cc99ff)relog: areaid1_2_town ;; forest encampment"
 			]
 		},
@@ -253,8 +253,8 @@
 				]
 			],
 			"lines": [
-				"(img:quest) silk: <sharp_and_cruel>",
-				"(img:waypoint) to areaid1_2_7 ;; the riverways"
+				"(img:quest)silk:  <sharp_and_cruel>",
+				"(img:waypoint)a  areaid1_2_7 ;; the riverways"
 			]
 		},
 		{
@@ -266,7 +266,7 @@
 				]
 			],
 			"lines": [
-				"(img:waypoint) to areaid1_2_7 ;; the riverways"
+				"(img:waypoint)a  areaid1_2_7 ;; the riverways"
 			]
 		},
 		{
@@ -280,7 +280,7 @@
 			],
 			"lines": [
 				"follow trail between 2 pillars",
-				"enter areaid1_2_12 ;; the wetlands"
+				"entrar en areaid1_2_12 ;; the wetlands"
 			]
 		},
 		{
@@ -293,9 +293,9 @@
 				]
 			],
 			"lines": [
-				"(color:red)kill arena:oak for (quest:amulet)",
-				"find (img:waypoint): areaid1_2_9 ;; western forest",
-				"(hint)__ often (img:7) or (img:1), rarely (img:5)"
+				"(color:red)matar arena:oakpara  (quest:amulet)",
+				"buscar (img:waypoint): areaid1_2_9 ;; western forest",
+				"(hint)__ a menudo (img:7)o  (img:1), raramente (img:5)"
 			]
 		},
 		{
@@ -306,7 +306,7 @@
 				]
 			],
 			"lines": [
-				"(img:waypoint) to areaid1_2_9 ;; western forest"
+				"(img:waypoint)a  areaid1_2_9 ;; western forest"
 			]
 		},
 		{
@@ -319,10 +319,10 @@
 				]
 			],
 			"lines": [
-				"go (img:4) to torch on road || follow:",
-				"(hint)_ 1) side path: (color:red)kill arena:alira for (quest:amulet)",
-				"(hint)_ 2) main road: kill arteri for (quest:emblem)",
-				"(img:quest) (quest:seal) || (color:cc99ff)relog: areaid1_2_town ;; forest encampment"
+				"ir (img:4)aantorcha en camino || follow:  ",
+				"(hint)_ 1) camino lateral:  (color:red)matar arena:alirapara  (quest:amulet)",
+				"(hint)_ 2) camino principal: matar a arteri para  (quest:emblem)",
+				"(img:quest) (quest:seal)||  (color:cc99ff)relog: areaid1_2_town ;; forest encampment"
 			]
 		},
 		{
@@ -333,10 +333,10 @@
 				]
 			],
 			"lines": [
-				"go (img:4) to torch on road || follow:",
-				"(hint)_ 1) side path: (quest:help) arena:alira for (quest:apex)",
-				"(hint)_ 2) main road: kill arteri for (quest:emblem)",
-				"(img:quest) (quest:seal) || (color:cc99ff)relog: areaid1_2_town ;; forest encampment"
+				"ir (img:4)aantorcha en camino || follow:  ",
+				"(hint)_ 1) camino lateral:  (quest:help) arena:alirapara  (quest:apex)",
+				"(hint)_ 2) camino principal: matar a arteri para  (quest:emblem)",
+				"(img:quest) (quest:seal)||  (color:cc99ff)relog: areaid1_2_town ;; forest encampment"
 			]
 		},
 		{
@@ -347,8 +347,8 @@
 				]
 			],
 			"lines": [
-				"(img:quest) eramir: (quest:the_apex)",
-				"(img:waypoint) to areaid1_1_town (img:town) ;; lioneye's watch"
+				"(img:quest)eramir:  (quest:the_apex)",
+				"(img:waypoint)a  areaid1_1_town (img:town) ;; lioneye's watch"
 			]
 		},
 		{
@@ -361,7 +361,7 @@
 				]
 			],
 			"lines": [
-				"(img:waypoint) to areaid1_1_town (img:town) ;; lioneye's watch"
+				"(img:waypoint)a  areaid1_1_town (img:town) ;; lioneye's watch"
 			]
 		},
 		{
@@ -372,8 +372,8 @@
 				]
 			],
 			"lines": [
-				"(img:quest) bestel: (quest:book)",
-				"(img:waypoint) to areaid1_2_3 ;; the crossroads"
+				"(img:quest)bestel:  (quest:book)",
+				"(img:waypoint)a  areaid1_2_3 ;; the crossroads"
 			]
 		},
 		{
@@ -384,7 +384,7 @@
 				]
 			],
 			"lines": [
-				"go (img:1) to areaid1_2_4 ;; broken bridge"
+				"ir (img:1)a  areaid1_2_4 ;; broken bridge"
 			]
 		},
 		{
@@ -395,10 +395,10 @@
 				]
 			],
 			"lines": [
-				"follow the road",
-				"leaguestart: optional: jewellery + 3 rogue exiles",
-				"(hint)__ look for (color:cc99ff)ruins near (img:waypoint)",
-				"(quest:help) (color:ff8111)kraityn for (quest:apex)",
+				"seguir el camino  ",
+				"leaguestart: optional:joyería+ 3 renegado exiliados  ",
+				"(hint)__ buscar  (color:cc99ff)ruinas cerca (img:waypoint)",
+				"(quest:help) (color:ff8111)kraityn para (quest:apex)",
 				"(color:cc99ff)relog: areaid1_1_town ;; lioneye's watch"
 			]
 		},
@@ -410,8 +410,8 @@
 				]
 			],
 			"lines": [
-				"(img:quest) bestel: <the_way_forward>",
-				"(img:waypoint) to areaid1_2_7 ;; the riverways"
+				"(img:quest)bestel:  <the_way_forward>",
+				"(img:waypoint)a  areaid1_2_7 ;; the riverways"
 			]
 		},
 		{
@@ -423,7 +423,7 @@
 			],
 			"lines": [
 				"follow trail between 2 pillars",
-				"enter areaid1_2_12 ;; the wetlands"
+				"entrar en areaid1_2_12 ;; the wetlands"
 			]
 		},
 		{
@@ -434,9 +434,9 @@
 				]
 			],
 			"lines": [
-				"find & (quest:help) arena:oak for (quest:apex)",
-				"clear (img:quest) (quest:roots), enter areaid1_2_11 ;; vaal ruins",
-				"(hint)__ usually (img:7) or (img:1), rarely (img:5)"
+				"buscar y (quest:help) arena:oakpara  (quest:apex)",
+				"limpiar (img:quest) (quest:roots), entrar en areaid1_2_11 ;; vaal ruins",
+				"(hint)__ generalmente (img:7)o  (img:1), raramente (img:5)"
 			]
 		},
 		{
@@ -448,8 +448,8 @@
 				]
 			],
 			"lines": [
-				"(img:quest) bestel: (quest:book)",
-				"(img:waypoint) to areaid1_2_12 ;; the wetlands"
+				"(img:quest)bestel:  (quest:book)",
+				"(img:waypoint)a  areaid1_2_12 ;; the wetlands"
 			]
 		},
 		{
@@ -460,7 +460,7 @@
 				]
 			],
 			"lines": [
-				"(img:waypoint) to areaid1_2_12 ;; the wetlands"
+				"(img:waypoint)a  areaid1_2_12 ;; the wetlands"
 			]
 		},
 		{
@@ -473,66 +473,66 @@
 				]
 			],
 			"lines": [
-				"clear (img:quest) (quest:roots), enter areaid1_2_11 ;; vaal ruins"
+				"limpiar (img:quest) (quest:roots), entrar en areaid1_2_11 ;; vaal ruins"
 			]
 		},
 		[
-			"find & enter areaid1_2_8 ;; northern forest",
-			"(hint)_ - zone is often s- or v-shaped",
-			"(hint)_ - rare: zone is an outward spiral"
+			"buscar y entrar en   areaid1_2_8 ;; northern forest",
+			"(hint)_ - zona is a menudo s- o v-shaped",
+			"(hint)_ - rare: zona is an outward spiral"
 		],
 		[
-			"(img:7) edge leads to areaid1_2_14_2 ;; the caverns"
+			"(img:7)bordelleva a    areaid1_2_14_2 ;; the caverns"
 		],
 		[
-			"find & enter areaid1_2_14_3 ;; ancient pyramid",
-			"twinkrun: (hint)__ in (img:7) / (img:0) / (img:1) corner after (img:waypoint)",
-			"leaguestart: (hint)_ - in (img:7) / (img:0) / (img:1) corner after (img:waypoint)",
-			"leaguestart: (hint)_ - (img:craft): diff. corner (secret door)"
+			"buscar y entrar en   areaid1_2_14_3 ;; ancient pyramid",
+			"twinkrun: (hint)__ en (img:7)/  (img:0)/  (img:1)esquinadespués de   (img:waypoint)",
+			"leaguestart: (hint)_ - en (img:7)/  (img:0)/  (img:1)esquinadespués de   (img:waypoint)",
+			"leaguestart: (hint)_ - (img:craft): diff. esquina (secret door)"
 		],
 		[
-			"find (img:arena) apex, kill oversoul (lvl:20-22)",
-			"(hint)_ - 1st (img:arena) stairs: random corner",
-			"(hint)_ - then opposite corners",
-			"(color:cc99ff)relog || (img:waypoint) to areaid1_3_1 ;; city of sarn"
+			"buscar (img:arena)apex,matar oversoul   (lvl:20-22)",
+			"(hint)_ - 1.º (img:arena)escaleras:aleatorio esquina  ",
+			"(hint)_ - luego opposite esquinas",
+			"(color:cc99ff)relog || (img:waypoint)a  areaid1_3_1 ;; city of sarn"
 		]
 	],
 	[
 		[
-			"leaguestart: go (img:3) to get (img:craft)",
-			"go (img:7) to save (img:quest) clarissa",
-			"go (img:5) to areaid1_3_town ;; sarn encampment"
+			"leaguestart:ir  (img:3)aobtener   (img:craft)",
+			"ir (img:7)asave   (img:quest)clarissa ",
+			"ir (img:5)a  areaid1_3_town ;; sarn encampment"
 		],
 		[
-			"enter areaid1_3_2 ;; the slums",
-			"find & enter areaid1_3_3_1 ;; the crematorium",
-			"(hint)__ (color:cc99ff)start & (color:cc99ff)exit: opposite corners"
+			"entrar en areaid1_3_2 ;; the slums",
+			"buscar y entrar en   areaid1_3_3_1 ;; the crematorium",
+			"(hint)__ (color:cc99ff)comenzar y (color:cc99ff)salida: opposite esquinas"
 		],
 		[
-			"leaguestart: complete (img:lab) trial",
-			"kill piety || get (img:quest) (quest:bracelet)",
+			"leaguestart:completar  (img:lab)prueba ",
+			"matar a piety || obtener (img:quest) (quest:bracelet)",
 			"(color:cc99ff)relog: areaid1_3_town ;; sarn encampment"
 		],
 		[
-			"(img:quest) maramoa: <lost_in_love>",
-			"(img:quest) clarissa: (quest:sewer_keys)",
-			"enter areaid1_3_2 ;; the slums"
+			"(img:quest)maramoa:  <lost_in_love>",
+			"(img:quest)clarissa:  (quest:sewer_keys)",
+			"entrar en areaid1_3_2 ;; the slums"
 		],
 		[
-			"open (img:quest) (quest:grating) to areaid1_3_10_1 ;; the sewers"
+			"abrir (img:quest) (quest:grating)a  areaid1_3_10_1 ;; the sewers"
 		],
 		[
-			"go (img:7) for (img:quest) (quest:bust) || get (img:waypoint)",
-			"find (img:quest) (quest:bust), (color:cc99ff)check_the_room:",
-			"(hint)_ - large room? (img:quest) (quest:3rd_bust) is (img:7)",
-			"(hint)_ - small room? (img:quest) (quest:3rd_bust) is (img:2)",
-			"go (img:0) to areaid1_3_5 ;; the marketplace"
+			"ir (img:7)para  (img:quest) (quest:bust)||obtener   (img:waypoint)",
+			"buscar (img:quest) (quest:bust), (color:cc99ff)check_the_room:",
+			"(hint)_ - habitación grande?  (img:quest) (quest:3rd_bust)is  (img:7)",
+			"(hint)_ - small habitación? (img:quest) (quest:3rd_bust)is  (img:2)",
+			"ir (img:0)a  areaid1_3_5 ;; the marketplace"
 		],
 		[
-			"follow (img:0) edge to (img:waypoint)",
-			"twinkrun: enter areaid1_3_7 ;; the battlefront",
-			"(hint)__ search in the corners",
-			"leaguestart: go (img:0) to areaid1_3_6 ;; the catacombs"
+			"follow (img:0)bordea   (img:waypoint)",
+			"twinkrun:entrar en  areaid1_3_7 ;; the battlefront",
+			"(hint)__ buscar en el esquinas",
+			"leaguestart:ir  (img:0)a  areaid1_3_6 ;; the catacombs"
 		],
 		{
 			"condition": [
@@ -540,8 +540,8 @@
 				"yes"
 			],
 			"lines": [
-				"complete (img:lab) trial",
-				"(hint)__ (color:cc99ff)start & (img:lab): adjacent corners1",
+				"completar (img:lab)prueba ",
+				"(hint)__ (color:cc99ff)comenzar y (img:lab): adjacent corners1",
 				"(color:cc99ff)relog: areaid1_3_town ;; sarn encampment"
 			]
 		},
@@ -551,9 +551,9 @@
 				"yes"
 			],
 			"lines": [
-				"(img:quest) hargan: (quest:book)",
-				"(hint)__ if lvl 23+: check for (color:cc99ff)4-links",
-				"(img:waypoint) to areaid1_3_5 ;; the marketplace"
+				"(img:quest)hargan:  (quest:book)",
+				"(hint)__ si lvl 23+: revisar para (color:cc99ff)4-links",
+				"(img:waypoint)a  areaid1_3_5 ;; the marketplace"
 			]
 		},
 		{
@@ -562,61 +562,61 @@
 				"yes"
 			],
 			"lines": [
-				"enter areaid1_3_7 ;; the battlefront",
-				"(hint)__ search in the corners"
+				"entrar en areaid1_3_7 ;; the battlefront",
+				"(hint)__ buscar en el esquinas"
 			]
 		},
 		[
 			"(color:cc99ff)if_you're_below_lvl_23,_catch_up",
-			"go (img:7) for (img:waypoint) _|| go (img:5) for (img:quest) (quest:spool)",
-			"go (img:7) to areaid1_3_9 (lvl:24) ;; the docks"
+			"ir (img:7)para  (img:waypoint)_||ir   (img:5)para  (img:quest) (quest:spool)",
+			"ir (img:7)a  areaid1_3_9 (lvl:24) ;; the docks"
 		],
 		[
-			"follow edge for (img:quest) (quest:sulphite)",
+			"seguir el borde para  (img:quest) (quest:sulphite)",
 			"(color:cc99ff)relog: areaid1_3_town ;; sarn encampment"
 		],
 		[
-			"twinkrun: (img:quest) hargan: (quest:book)",
-			"(img:waypoint) to areaid1_3_7 ;; the battlefront"
+			"twinkrun: (img:quest)hargan:  (quest:book)",
+			"(img:waypoint)a  areaid1_3_7 ;; the battlefront"
 		],
 		[
-			"enter areaid1_3_8_1 ;; solaris temple (1)",
+			"entrar en areaid1_3_8_1 ;; solaris temple (1)",
 			"(hint)__ follow channel upstream",
-			"enter areaid1_3_8_2 ;; solaris temple (2)"
+			"entrar en areaid1_3_8_2 ;; solaris temple (2)"
 		],
 		[
-			"find (img:quest) dialla: <amulet>,  (quest:talc)",
-			"leaguestart: (hint)__ (img:craft) in (img:arena) room next to her",
-			"(img:waypoint) to areaid1_3_10_1 ;; the sewers"
+			"buscar (img:quest)dialla:  <amulet>,  (quest:talc)",
+			"leaguestart: (hint)__ (img:craft)en  (img:arena)habitaciónsiguiente a her  ",
+			"(img:waypoint)a  areaid1_3_10_1 ;; the sewers"
 		],
 		[
 			"burn (img:quest) (quest:undying_blockage)",
-			"enter areaid1_3_13 ;; ebony barracks"
+			"entrar en areaid1_3_13 ;; ebony barracks"
 		],
 		[
-			"get (img:waypoint) || go (img:7) for arena:gravicius",
-			"go (img:7) to areaid1_3_14_1 ;; lunaris temple (1)"
+			"obtener (img:waypoint)||ir   (img:7)para  arena:gravicius",
+			"ir (img:7)a  areaid1_3_14_1 ;; lunaris temple (1)"
 		],
 		[
-			"enter areaid1_3_14_2 ;; lunaris temple (2)",
-			"(hint)_ - initial (color:cc99ff)halls point (img:7) or (img:1)",
-			"(hint)_ - follow carpets + that direction"
+			"entrar en areaid1_3_14_2 ;; lunaris temple (2)",
+			"(hint)_ - initial (color:cc99ff)halls point (img:7)o  (img:1)",
+			"(hint)_ - seguir las alfombras + that dirección "
 		],
 		[
-			"find & kill piety for (quest:key) (lvl:27)",
+			"buscar y matar piety para   (quest:key) (lvl:27)",
 			"(hint)_ - follow (color:cc99ff)3_stairs_up + single wagon",
-			"twinkrun: (hint)_ - (color:cc99ff)2_large_gates lead to arena",
-			"leaguestart: (hint)_ - (color:cc99ff)2_large_gates lead to arena: (img:craft)",
+			"twinkrun: (hint)_ - (color:cc99ff)2_large_gates lead a arena",
+			"leaguestart: (hint)_ - (color:cc99ff)2_large_gates lead a arena: (img:craft)",
 			"(color:cc99ff)relog: areaid1_3_town ;; sarn encampment"
 		],
 		[
-			"(img:quest) maramoa: <sever_the_right_hand>",
-			"(img:quest) grigor: (quest:book)",
-			"twinkrun: (color:ff00ff)buy_gems in (img:hideout) (color:fec076)your_hideout || lilly: <a_fixture_of_fate>  ;; only shows with imported pob",
-			"(img:waypoint) to areaid1_3_13 ;; ebony barracks"
+			"(img:quest)maramoa:  <sever_the_right_hand>",
+			"(img:quest)grigor:  (quest:book)",
+			"twinkrun: (color:ff00ff)buy_gems en (img:hideout) (color:fec076)your_hideout || lilly: <a_fixture_of_fate>  ;; only shows with imported pob",
+			"(img:waypoint)a  areaid1_3_13 ;; ebony barracks"
 		],
 		[
-			"go (img:1) to areaid1_3_15 ;; imperial gardens"
+			"ir (img:1)a  areaid1_3_15 ;; imperial gardens"
 		],
 		{
 			"condition": [
@@ -624,8 +624,8 @@
 				"yes"
 			],
 			"lines": [
-				"follow road: get (img:waypoint)",
-				"go (img:1) and (img:0) for (img:lab) trial",
+				"seguir el camino: obtener  (img:waypoint)",
+				"ir (img:1)y  (img:0)para  (img:lab)prueba ",
 				"(color:cc99ff)relog: areaid1_3_town ;; sarn encampment"
 			]
 		},
@@ -635,7 +635,7 @@
 				"yes"
 			],
 			"lines": [
-				"(img:waypoint) to areaid1_3_15 ;; imperial gardens"
+				"(img:waypoint)a  areaid1_3_15 ;; imperial gardens"
 			]
 		},
 		{
@@ -644,7 +644,7 @@
 				"yes"
 			],
 			"lines": [
-				"follow (img:7) road to areaid1_3_17_1 ;; the library",
+				"follow (img:7)caminoa   areaid1_3_17_1 ;; the library",
 				"quest-check: <a_fixture_of_fate> ;; this is a hidden routing-check"
 			]
 		},
@@ -654,8 +654,8 @@
 				"yes"
 			],
 			"lines": [
-				"find (img:waypoint) + (color:cc99ff)loose_candle",
-				"enter areaid1_3_17_2 ;; the archives",
+				"buscar (img:waypoint)+  (color:cc99ff)loose_candle",
+				"entrar en areaid1_3_17_2 ;; the archives",
 				"quest-check: <a_fixture_of_fate> ;; this is a hidden routing-check"
 			]
 		},
@@ -665,8 +665,8 @@
 				"yes"
 			],
 			"lines": [
-				"find 4x (img:quest) (quest:golden_page)",
-				"(hint)__ (img:craft): candle in a narrow corridor",
+				"buscar 4x (img:quest) (quest:golden_page)",
+				"(hint)__ (img:craft): candle en a narrow pasillo",
 				"(color:cc99ff)relog: areaid1_3_town ;; sarn encampment",
 				"quest-check: <a_fixture_of_fate> ;; this is a hidden routing-check"
 			]
@@ -677,8 +677,8 @@
 				"yes"
 			],
 			"lines": [
-				"get some currency",
-				"(img:waypoint) to areaid1_3_17_1 ;; the library",
+				"obtener some currency",
+				"(img:waypoint)a  areaid1_3_17_1 ;; the library",
 				"quest-check: <a_fixture_of_fate> ;; this is a hidden routing-check"
 			]
 		},
@@ -688,199 +688,199 @@
 				"yes"
 			],
 			"lines": [
-				"(img:quest) siosa: <a_fixture_of_fate>",
-				"(img:waypoint) to areaid1_3_15 ;; imperial gardens",
+				"(img:quest)siosa:  <a_fixture_of_fate>",
+				"(img:waypoint)a  areaid1_3_15 ;; imperial gardens",
 				"quest-check: <a_fixture_of_fate> ;; this is a hidden routing-check"
 			]
 		},
 		[
-			"twinkrun: follow road: get (img:waypoint)",
-			"early option: (img:lab) normal_lab",
+			"twinkrun:seguir el camino:obtener    (img:waypoint)",
+			"early option: (img:lab)normal_lab ",
 			"twinkrun: (hint)__ area-lvl 33 || 2nd option later",
 			"leaguestart: (hint)_ - area-lvl 33 || 2nd option later",
-			"leaguestart: (hint)_ - (img:waypoint) to (img:town), enter areaidlabyrinth_airlock ;; aspirants' plaza",
-			"(color:cc99ff)wagons lead to areaid1_3_18_1 ;; sceptre of god"
+			"leaguestart: (hint)_ - (img:waypoint)a  (img:town), entrar en areaidlabyrinth_airlock ;; aspirants' plaza",
+			"(color:cc99ff)carretas lead a areaid1_3_18_1 ;; sceptre of god"
 		],
 		[
-			"enter areaid1_3_18_2 ;; upper sceptre of god",
-			"(hint)__ (img:arena) stairs can spawn every 90°"
+			"entrar en areaid1_3_18_2 ;; upper sceptre of god",
+			"(hint)__ (img:arena)escalerascan spawn every 90°  "
 		],
 		[
-			"find (img:arena) rooftop, kill dominus (lvl:28)",
-			"(hint)__ same layout, go (img:1) after scion cage",
-			"enter areaid1_4_1 ;; the aqueduct"
+			"buscar (img:arena)rooftop,matar a dominus   (lvl:28)",
+			"(hint)__ mismo diseño, ir (img:1)después descion jaula  ",
+			"entrar en areaid1_4_1 ;; the aqueduct"
 		]
 	],
 	[
 		[
-			"enter areaid1_4_town ;; highgate",
-			"go (img:5) to areaid1_4_2 ;; dried lake"
+			"entrar en areaid1_4_town ;; highgate",
+			"ir (img:5)a  areaid1_4_2 ;; dried lake"
 		],
 		[
-			"kill voll for (quest:banner) (lvl:30)",
-			"(hint)__ look for a (img:help) -icon",
+			"matar voll para (quest:banner) (lvl:30)",
+			"(hint)__ buscar a  (img:help)-icon ",
 			"(color:cc99ff)relog: areaid1_4_town ;; highgate"
 		],
 		[
-			"enter areaid1_4_3_1 ;; the mines (1)"
+			"entrar en areaid1_4_3_1 ;; the mines (1)"
 		],
 		[
-			"leaguestart: find the (img:craft)",
-			"enter areaid1_4_3_2 ;; the mines (2)"
+			"leaguestart:buscarel   (img:craft)",
+			"entrar en areaid1_4_3_2 ;; the mines (2)"
 		],
 		[
-			"find (img:quest) (quest:deshret)",
-			"(hint)__ either on main path or",
-			"(hint)__ in side rooms/passages",
-			"enter areaid1_4_3_3 ;; crystal veins"
+			"buscar (img:quest) (quest:deshret)",
+			"(hint)__ either en principal camino o",
+			"(hint)__ en lateral rooms/passages",
+			"entrar en areaid1_4_3_3 ;; crystal veins"
 		],
 		[
-			"find (img:waypoint): areaid1_4_town (img:town) ;; highgate"
+			"buscar (img:waypoint): areaid1_4_town (img:town) ;; highgate"
 		],
 		[
-			"(img:quest) tasuni: (quest:book)",
-			"(img:quest) oyun: <breaking_the_seal>",
-			"regular option: (img:lab) normal_lab",
-			"leaguestart: (hint)__ enter areaidlabyrinth_airlock ;; aspirants' plaza",
-			"(img:waypoint) to areaid1_4_3_3 ;; crystal veins"
+			"(img:quest)tasuni:  (quest:book)",
+			"(img:quest)oyun:  <breaking_the_seal>",
+			"regular option: (img:lab)normal_lab ",
+			"leaguestart: (hint)__ entrar en areaidlabyrinth_airlock ;; aspirants' plaza",
+			"(img:waypoint)a  areaid1_4_3_3 ;; crystal veins"
 		],
 		[
-			"enter areaid1_4_5_1 ;; daresso's dream"
+			"entrar en areaid1_4_5_1 ;; daresso's dream"
 		],
 		[
-			"find & enter areaid1_4_5_2 ;; grand arena",
-			"(hint)__ go (img:1) and straight if possible"
+			"buscar y entrar en   areaid1_4_5_2 ;; grand arena",
+			"(hint)__ ir (img:1)yrecto si es posible   "
 		],
 		[
-			"kill daresso for (quest:eye)",
-			"(hint)__ go (img:7) whenever possible",
-			"(img:portal) to areaid1_4_town"
+			"matar a daresso para (quest:eye)",
+			"(hint)__ ir (img:7)siempre que sea posible  ",
+			"(img:portal)a  areaid1_4_town"
 		],
 		[
-			"(img:waypoint) to areaid1_4_3_3 ;; crystal veins",
-			"enter areaid1_4_4_1 ;; kaom's dream"
+			"(img:waypoint)a  areaid1_4_3_3 ;; crystal veins",
+			"entrar en areaid1_4_4_1 ;; kaom's dream"
 		],
 		[
-			"enter areaid1_4_4_3 ;; kaom's stronghold",
-			"(hint)__ go (img:1), then follow bridges/stairs"
+			"entrar en areaid1_4_4_3 ;; kaom's stronghold",
+			"(hint)__ ir (img:1), luego seguir puentes/escaleras/stairs "
 		],
 		[
-			"kill kaom for (quest:eye) || (img:portal) to areaid1_4_town ;; highgate",
-			"(hint)__ if bend on the right, go (img:7). else (img:1)"
+			"matar a kaom para (quest:eye)||  (img:portal)a  areaid1_4_town ;; highgate",
+			"(hint)__ si bend en el derecha, ir (img:7). si no (img:1)"
 		],
 		[
-			"(img:waypoint) to areaid1_4_3_3 ;; crystal veins",
-			"talk to (img:quest) lady dialla",
-			"enter areaid1_4_6_1 ;; belly of the beast (1)"
+			"(img:waypoint)a  areaid1_4_3_3 ;; crystal veins",
+			"hablar con  (img:quest)ladydialla  ",
+			"entrar en areaid1_4_6_1 ;; belly of the beast (1)"
 		],
 		[
-			"enter areaid1_4_6_2 ;; belly of the beast (2)",
-			"(hint)__ go (img:6) whenever possible"
+			"entrar en areaid1_4_6_2 ;; belly of the beast (2)",
+			"(hint)__ ir (img:6)siempre que sea posible  "
 		],
 		[
-			"kill piety || enter areaid1_4_6_3 ;; the harvest",
-			"(hint)_ - generally, (color:cc99ff)exit is west of (color:cc99ff)start",
-			"(hint)_ - go straight as long as possible"
+			"matar a piety || entrar en areaid1_4_6_3 ;; the harvest",
+			"(hint)_ - generally, (color:cc99ff)salida is oeste de (color:cc99ff)comenzar",
+			"(hint)_ - ir recto lo más lejos posible   "
 		],
 		[
-			"kill doedre,_maligaro,_shav",
-			"(img:quest) piety || kill malachai (lvl:34)",
-			"(img:portal) to areaid1_4_town ;; highgate"
+			"matar doedre,_maligaro,_shav",
+			"(img:quest)piety|| matar a malachai   (lvl:34)",
+			"(img:portal)a  areaid1_4_town ;; highgate"
 		],
 		[
-			"(img:quest) dialla: <the_eternal_nightmare>",
-			"enter areaid1_4_7 ;; the ascent"
+			"(img:quest)dialla:  <the_eternal_nightmare>",
+			"entrar en areaid1_4_7 ;; the ascent"
 		],
 		[
-			"go (img:0), follow (img:7) cart tracks",
-			"find (img:quest) (quest:lever), enter areaid1_5_1 ;; slave pens"
+			"ir (img:0), follow (img:7)carttracks  ",
+			"buscar (img:quest) (quest:lever), entrar en areaid1_5_1 ;; slave pens"
 		]
 	],
 	[
 		[
-			"follow (img:5) edge, kill overseer",
-			"(hint)_ - find corridor with gallows",
-			"(hint)_ - loop clockwise to reach (color:cc99ff)arena",
-			"enter areaid1_5_town ;; overseer's tower"
+			"follow (img:5)borde,matar overseer  ",
+			"(hint)_ - buscar pasillo con horcas",
+			"(hint)_ - loop clockwise a reach (color:cc99ff)arena",
+			"entrar en areaid1_5_town ;; overseer's tower"
 		],
 		[
-			"(img:quest) lani: <ring>",
-			"enter areaid1_5_2 ;; control blocks"
+			"(img:quest)lani:  <ring>",
+			"entrar en areaid1_5_2 ;; control blocks"
 		],
 		[
-			"go (img:7), find (img:quest) (quest:miasmeter)",
-			"go (img:1), kill casticus for (quest:eyes)",
-			"go (img:0), enter areaid1_5_3 ;; oriath square"
+			"ir (img:7), buscar (img:quest) (quest:miasmeter)",
+			"ir (img:1), matar casticus para (quest:eyes)",
+			"ir (img:0), entrar en areaid1_5_3 ;; oriath square"
 		],
 		[
-			"go (img:1) to (img:quest) areaid1_5_4 ;; templar courts"
+			"ir (img:1)a  (img:quest) areaid1_5_4 ;; templar courts"
 		],
 		[
-			"enter  areaid1_5_5 (lvl:37) ;; chamber of innocence",
-			"(hint)__ (color:cc99ff)start & (color:cc99ff)exit: adjacent corners2"
+			"entrar en  areaid1_5_5 (lvl:37) ;; chamber of innocence",
+			"(hint)__ (color:cc99ff)comenzar y (color:cc99ff)salida: adjacent corners2"
 		],
 		[
-			"follow (img:0) edge, kill avarius",
-			"leaguestart: (hint)__ (img:craft): corridor along (img:4) edge",
-			"(hint)__ high exp zone, farm level: 40-42",
-			"go (img:3), enter areaid1_5_4b ;; torched courts",
-			"leaguestart: (hint)__ talk to (img:quest) bannon so he's in (img:town)"
+			"follow (img:0)borde,matar avarius  ",
+			"leaguestart: (hint)__ (img:craft): pasillo along (img:4)borde ",
+			"(hint)__ high exp zona, farm level: 40-42",
+			"ir (img:3), entrar en areaid1_5_4b ;; torched courts",
+			"leaguestart: (hint)__ hablar con  (img:quest)bannonso he's en   (img:town)"
 		],
 		[
-			"enter areaid1_5_3b ;; ruined square",
-			"(hint)__ (color:cc99ff)start & (color:cc99ff)exit: adjacent corners2"
+			"entrar en areaid1_5_3b ;; ruined square",
+			"(hint)__ (color:cc99ff)comenzar y (color:cc99ff)salida: adjacent corners2"
 		],
 		[
-			"follow (img:5) alley to (img:waypoint)",
-			"enter areaid1_5_6 ;; the ossuary"
+			"follow (img:5)alleya   (img:waypoint)",
+			"entrar en areaid1_5_6 ;; the ossuary"
 		],
 		[
-			"find (img:quest) (quest:sign_of_purity)",
-			"(hint)__ zone: (counter-)clockwise spiral",
-			"use (color:cc99ff)lever, enter areaid1_5_3b ;; ruined square"
+			"buscar (img:quest) (quest:sign_of_purity)",
+			"(hint)__ zona: (counter-)clockwise spiral",
+			"usar (color:cc99ff)palanca, entrar en areaid1_5_3b ;; ruined square"
 		],
 		[
-			"go (img:5) to fountain, set (img:portal)",
-			"go (img:4) to areaid1_5_7 ;; the reliquary"
+			"ir (img:5)afountain, colocar   (img:portal)",
+			"ir (img:4)a  areaid1_5_7 ;; the reliquary"
 		],
 		[
-			"find 3x (img:quest) (quest:torment) near corners",
-			"leaguestart: (hint)__ (img:craft) is near one of the (img:quest) (quest:torments)",
-			"(img:waypoint) to areaid1_5_town (img:town) ;; overseer's tower"
+			"buscar 3x (img:quest) (quest:torment)cercaesquinas  ",
+			"leaguestart: (hint)__ (img:craft)iscerca one de el   (img:quest) (quest:torments)",
+			"(img:waypoint)a  areaid1_5_town (img:town) ;; overseer's tower"
 		],
 		[
-			"(img:quest) lani: (color:8787fe)util._flask || <jewel> || (quest:book)",
-			"(img:quest) vilenta: (quest:book)",
-			"enter (img:portal) areaid1_5_3b ;; ruined square"
+			"(img:quest)lani:  (color:8787fe)util._flask || <jewel>||  (quest:book)",
+			"(img:quest)vilenta:  (quest:book)",
+			"entrar en (img:portal) areaid1_5_3b ;; ruined square"
 		],
 		[
-			"go (img:7) to areaid1_5_8 ;; cathedral rooftop"
+			"ir (img:7)a  areaid1_5_8 ;; cathedral rooftop"
 		],
 		[
-			"go (img:7), kill kitava",
-			"(img:quest) lilly: areaid2_6_town ;; lioneye's watch"
+			"ir (img:7), matar a kitava",
+			"(img:quest)lilly:  areaid2_6_town ;; lioneye's watch"
 		]
 	],
 	[
 		[
-			"leaguestart: talk to (img:quest) lilly",
-			"twinkrun: (color:ff00ff)buy_gems in (img:hideout) (color:fec076)your_hideout || lilly: <fallen_from_grace>  ;; only shows with imported pob",
-			"enter areaid2_6_2 ;; the coast"
+			"leaguestart:hablar con   (img:quest)lilly ",
+			"twinkrun: (color:ff00ff)buy_gems en (img:hideout) (color:fec076)your_hideout || lilly: <fallen_from_grace>  ;; only shows with imported pob",
+			"entrar en areaid2_6_2 ;; the coast"
 		],
 		[
-			"leaguestart: optional: (img:quest) <belt/amu>: get (img:waypoint)",
-			"enter areaid2_6_4 ;; mud flats"
+			"leaguestart: optional: (img:quest) <belt/amu>: obtener (img:waypoint)",
+			"entrar en areaid2_6_4 ;; mud flats"
 		],
 		[
-			"go (img:2), kill queen for (quest:eye)",
-			"(hint)__ if you hit (color:cc99ff)zone-edge, follow it",
-			"go (img:7), enter areaid2_6_5 ;; karui fortress",
-			"(hint)__ if (color:cc99ff)edge is beach, go (img:5) instead"
+			"ir (img:2), matar queen para (quest:eye)",
+			"(hint)__ si you hit (color:cc99ff)zone-edge, follow it",
+			"ir (img:7), entrar en areaid2_6_5 ;; karui fortress",
+			"(hint)__ si (color:cc99ff)borde is playa, ir (img:5)en su lugar "
 		],
 		[
-			"optional: tattoo(s): follow water (img:7)",
-			"go (img:1) to (img:arena) (color:ffffff)_|| kill tukohama",
-			"go (img:1) to areaid2_6_6 ;; the ridge"
+			"optional:tattoo (s): follow agua (img:7)",
+			"ir (img:1)a  (img:arena) (color:ffffff)_|| matar a tukohama",
+			"ir (img:1)a  areaid2_6_6 ;; the ridge"
 		],
 		{
 			"condition": [
@@ -888,10 +888,10 @@
 				"yes"
 			],
 			"lines": [
-				"activate the (img:waypoint)",
-				"optional: (img:quest) <belt/amu>: (img:waypoint) to areaid2_6_2 ;; the coast",
-				"(hint)__ find (img:quest) (quest:script) in (img:arena) areaid2_6_3 ;; tidal island",
-				"(img:portal) to areaid2_6_town ;; lioneye's watch"
+				"activar el (img:waypoint)",
+				"optional: (img:quest) <belt/amu>: (img:waypoint)a  areaid2_6_2 ;; the coast",
+				"(hint)__ buscar (img:quest) (quest:script)en  (img:arena) areaid2_6_3 ;; tidal island",
+				"(img:portal)a  areaid2_6_town ;; lioneye's watch"
 			]
 		},
 		{
@@ -900,7 +900,7 @@
 				"yes"
 			],
 			"lines": [
-				"enter areaid2_6_1 ;; twilight strand"
+				"entrar en areaid2_6_1 ;; twilight strand"
 			]
 		},
 		{
@@ -909,7 +909,7 @@
 				"yes"
 			],
 			"lines": [
-				"kill everything",
+				"matar everything",
 				"(color:cc99ff)relog: areaid2_6_town ;; lioneye's watch"
 			]
 		},
@@ -919,263 +919,263 @@
 				"yes"
 			],
 			"lines": [
-				"(img:quest) lilly: <fallen_from_grace>",
-				"optional: (img:quest) bestel: <belt/amu> for (quest:script)",
-				"(img:quest) tarkleigh: (quest:book) ;; tukohama",
-				"(img:waypoint) to areaid2_6_6 ;; the ridge"
+				"(img:quest)lilly:  <fallen_from_grace>",
+				"optional: (img:quest)bestel:  <belt/amu>para  (quest:script)",
+				"(img:quest)tarkleigh:  (quest:book) ;; tukohama",
+				"(img:waypoint)a  areaid2_6_6 ;; the ridge"
 			]
 		},
 		[
-			"check (img:waypoint) pos. relative to (img:arena)",
-			"(hint)_ - if above: go far (img:1), then (img:7)",
-			"(hint)_ - if left: go far (img:5), then (img:7)",
-			"enter areaid2_6_7_1 ;; lower prison"
+			"revisar (img:waypoint)pos.relative a   (img:arena)",
+			"(hint)_ - si arriba: ir lejos (img:1), luego (img:7)",
+			"(hint)_ - si izquierda: ir lejos (img:5), luego (img:7)",
+			"entrar en areaid2_6_7_1 ;; lower prison"
 		],
 		[
-			"leaguestart: complete (img:lab) trial",
-			"enter areaid2_6_7_2 ;; shavronne's tower"
+			"leaguestart:completar  (img:lab)prueba ",
+			"entrar en areaid2_6_7_2 ;; shavronne's tower"
 		],
 		[
-			"kill shavronne_&_brutus",
-			"enter areaid2_6_8 ;; prisoner's gate"
+			"matar shavronne_&_brutus",
+			"entrar en areaid2_6_8 ;; prisoner's gate"
 		],
 		[
-			"follow road to areaid2_6_9 ;; western forest"
+			"seguir el camino a  areaid2_6_9 ;; western forest"
 		],
 		[
-			"follow road to areaid2_6_10 ;; the riverways",
-			"leaguestart: (hint)__ (img:craft): follow side path marked by",
-			"leaguestart: (hint)__ torch on road"
+			"seguir el camino a  areaid2_6_10 ;; the riverways",
+			"leaguestart: (hint)__ (img:craft): follow camino lateral marked por ",
+			"leaguestart: (hint)__ antorcha en camino"
 		],
 		[
-			"follow road: get (img:waypoint)",
+			"seguir el camino: obtener  (img:waypoint)",
 			"follow trail between 2 pillars",
-			"enter areaid2_6_11 ;; the wetlands"
+			"entrar en areaid2_6_11 ;; the wetlands"
 		],
 		[
-			"follow (img:6) edge, kill ryslatha",
-			"(hint)__ rare: (img:arena) arena can be (img:1) instead",
-			"(img:portal) to areaid2_6_town ;; lioneye's watch"
+			"follow (img:6)borde,matar ryslatha  ",
+			"(hint)__ rare: (img:arena)arenacan be   (img:1)en su lugar ",
+			"(img:portal)a  areaid2_6_town ;; lioneye's watch"
 		],
 		[
-			"(img:waypoint) to areaid2_6_8 ;; prisoner's gate"
+			"(img:waypoint)a  areaid2_6_8 ;; prisoner's gate"
 		],
 		[
-			"ledge near road leads to passage",
-			"follow passage, kill abberath",
+			"saliente cerca camino lleva a pasaje ",
+			"follow pasaje, matar a abberath",
 			"(color:cc99ff)relog: areaid2_6_town ;; lioneye's watch"
 		],
 		[
-			"(img:quest) bestel: (quest:book) ;; abberath",
-			"leaguestart: (img:quest) tarkleigh: <helmet> || (quest:book) ;; shav || ryslatha",
-			"twinkrun: (img:quest) tarkleigh: (quest:book) || <helmet> || (quest:book) ;; tukohama || shav || ryslatha",
-			"(img:waypoint) to areaid2_6_10 ;; the riverways"
+			"(img:quest)bestel:  (quest:book) ;; abberath",
+			"leaguestart: (img:quest)tarkleigh:  <helmet>||  (quest:book) ;; shav || ryslatha",
+			"twinkrun: (img:quest)tarkleigh:  (quest:book)||  <helmet>||  (quest:book) ;; tukohama || shav || ryslatha",
+			"(img:waypoint)a  areaid2_6_10 ;; the riverways"
 		],
 		[
-			"follow road to the end",
-			"go (img:3) to areaid2_6_12 ;; southern forest"
+			"seguir el camino a el end ",
+			"ir (img:3)a  areaid2_6_12 ;; southern forest"
 		],
 		[
-			"go (img:2), then follow wall (img:3)",
-			"enter areaid2_6_13 ;; cavern of anger"
+			"ir (img:2), luego seguir la pared  (img:3)",
+			"entrar en areaid2_6_13 ;; cavern of anger"
 		],
 		[
-			"take (img:quest) (quest:flag) || enter areaid2_6_14 ;; the beacon"
+			"tomar (img:quest) (quest:flag)||entrar en   areaid2_6_14 ;; the beacon"
 		],
 		[
-			"go (img:1) to (img:quest) (quest:fuel_carts)",
-			"leaguestart: (hint)__ (img:craft): stairs leading to carts",
+			"ir (img:1)a  (img:quest) (quest:fuel_carts)",
+			"leaguestart: (hint)__ (img:craft): escaleras leading a carts",
 			"light (img:quest) (quest:beacon), burn (img:quest) (quest:flag)",
-			"(img:quest) weylam: areaid2_6_15 ;; brine king's reef"
+			"(img:quest)weylam:  areaid2_6_15 ;; brine king's reef"
 		],
 		[
-			"try to go (img:5) from (img:waypoint) :",
-			"(hint)_ - blocked: go far (img:3). follow (img:2) edge",
-			"(hint)_ - open: go (img:5) and follow top edge",
-			"kill tsoagoth, (img:portal) areaid2_6_town ;; lioneye's watch"
+			"try a ir (img:5)desde  (img:waypoint): ",
+			"(hint)_ - bloqueado: ir lejos (img:3). follow (img:2)borde ",
+			"(hint)_ - abrir: ir (img:5)yfollow borde superior   ",
+			"matar tsoagoth, (img:portal) areaid2_6_town ;; lioneye's watch"
 		],
 		[
 			"select pantheons",
-			"(img:waypoint) to areaid2_7_town (img:town) ;; bridge encampment"
+			"(img:waypoint)a  areaid2_7_town (img:town) ;; bridge encampment"
 		]
 	],
 	[
 		[
-			"enter areaid2_7_1 ;; broken bridge"
+			"entrar en areaid2_7_1 ;; broken bridge"
 		],
 		[
 			"leaguestart: optional: (img:quest) (color:8787fe)utility_flask",
-			"(hint)_ - follow road up to broken (img:waypoint)",
-			"(hint)_ - find (img:quest) (quest:locket) in nearby ruins",
-			"follow road: areaid2_7_2 ;; the crossroads"
+			"(hint)_ - seguir el camino up a broken  (img:waypoint)",
+			"(hint)_ - buscar (img:quest) (quest:locket)encercano ruinas  ",
+			"seguir el camino:  areaid2_7_2 ;; the crossroads"
 		],
 		[
-			"follow road: get (img:waypoint)",
-			"go (img:3) to areaid2_7_3 ;; fellshrine ruins"
+			"seguir el camino: obtener  (img:waypoint)",
+			"ir (img:3)a  areaid2_7_3 ;; fellshrine ruins"
 		],
 		[
-			"follow road to areaid2_7_4 ;; the crypt"
+			"seguir el camino a  areaid2_7_4 ;; the crypt"
 		],
 		[
-			"leaguestart: complete (img:lab) trial",
-			"find (img:arena) sarcophagus + (img:quest) (quest:map)",
-			"(img:portal) to areaid2_7_town ;; bridge encampment"
+			"leaguestart:completar  (img:lab)prueba ",
+			"buscar (img:arena)sarcophagus+   (img:quest) (quest:map)",
+			"(img:portal)a  areaid2_7_town ;; bridge encampment"
 		],
 		[
-			"leaguestart: optional: (quest:locket)? (img:quest) weylam: (color:8787fe)util._flask",
-			"(img:waypoint) to areaid2_7_2 ;; the crossroads"
+			"leaguestart: optional: (quest:locket)? (img:quest)weylam:  (color:8787fe)util._flask",
+			"(img:waypoint)a  areaid2_7_2 ;; the crossroads"
 		],
 		[
-			"go (img:7) to areaid2_7_5_1 ;; chamber of sins (1)"
+			"ir (img:7)a  areaid2_7_5_1 ;; chamber of sins (1)"
 		],
 		[
-			"get (img:waypoint) in central room",
-			"use (quest:map) in (img:quest) (quest:map_device)",
-			"enter areaid2_7_5_map ;; maligaro's sanctum"
+			"obtener (img:waypoint)encentral habitación  ",
+			"usar (quest:map)en  (img:quest) (quest:map_device)",
+			"entrar en areaid2_7_5_map ;; maligaro's sanctum"
 		],
 		[
-			"kill maligaro for (quest:venom)",
-			"(hint)__ follow edge to find bridges",
-			"(img:portal) to areaid2_7_5_1 ;; chamber of sins (1)"
+			"matar a maligaro para (quest:venom)",
+			"(hint)__ seguir el borde a buscar bridges ",
+			"(img:portal)a  areaid2_7_5_1 ;; chamber of sins (1)"
 		],
 		[
-			"(img:quest) silk: (quest:obsidian_key)",
-			"enter areaid2_7_5_2 ;; chamber of sins (2)",
-			"(hint)__ the (img:waypoint) points to the exit"
+			"(img:quest)silk:  (quest:obsidian_key)",
+			"entrar en areaid2_7_5_2 ;; chamber of sins (2)",
+			"(hint)__ el (img:waypoint)apuntaa el salida  "
 		],
 		[
-			"leaguestart: complete (img:lab) trial",
-			"(hint)__ go (img:3) if possible, else (img:6)",
-			"twinkrun: find (img:lab) for orientation:",
-			"(hint)__ go (img:3) if possible, else (img:6)",
-			"open (img:quest) (color:cc99ff)passage to areaid2_7_6 ;; the den",
-			"(hint)__ try far (img:5) of (img:lab), else far (img:1)"
+			"leaguestart:completar  (img:lab)prueba ",
+			"(hint)__ ir (img:3)si es posible,si no    (img:6)",
+			"twinkrun:buscar  (img:lab)paraorientation:  ",
+			"(hint)__ ir (img:3)si es posible,si no    (img:6)",
+			"abrir (img:quest) (color:cc99ff)pasaje a areaid2_7_6 ;; the den",
+			"(hint)__ try lejos (img:5)de  (img:lab), si no lejos (img:1)"
 		],
 		[
-			"enter areaid2_7_7 ;; ashen fields"
+			"entrar en areaid2_7_7 ;; ashen fields"
 		],
 		[
-			"early option: (img:lab) cruel_lab",
+			"early option: (img:lab)cruel_lab ",
 			"(hint)__ area-lvl 55 || 2nd option later",
-			"follow (img:5) road, kill greust",
-			"enter areaid2_7_8 ;; northern forest"
+			"follow (img:5)camino,matar a greust  ",
+			"entrar en areaid2_7_8 ;; northern forest"
 		],
 		[
-			"go (img:5), then (img:7) along edge",
-			"(hint)__ set (img:portal) if you find (img:arena) dread_thicket",
-			"enter areaid2_7_10 ;; the causeway"
+			"ir (img:5), luego (img:7)alongborde  ",
+			"(hint)__ colocar (img:portal)siyou buscar   (img:arena)dread_thicket ",
+			"entrar en areaid2_7_10 ;; the causeway"
 		],
 		[
-			"go (img:0) / (img:6) as much as possible",
-			"take (img:quest) (quest:star), enter areaid2_7_11 ;; vaal city"
+			"ir (img:0)/  (img:6)lo más posible    ",
+			"tomar (img:quest) (quest:star), entrar en areaid2_7_11 ;; vaal city"
 		],
 		[
-			"go (img:7) _|| if you run into a (color:cc99ff)cliff:",
-			"(hint)_ - follow it + go (img:1) around wall",
-			"(hint)_ - else: go (img:7) around long corners",
-			"(img:waypoint) to areaid2_7_town (img:town) ;; bridge encampment"
+			"ir (img:7)_||si you run into a   (color:cc99ff)acantilado:",
+			"(hint)_ - follow it + ir (img:1)alrededorpared  ",
+			"(hint)_ - else:ir  (img:7)alrededoresquinas largas   ",
+			"(img:waypoint)a  areaid2_7_town (img:town) ;; bridge encampment"
 		],
 		[
-			"(img:quest) weylam: (quest:book) ;; star",
-			"(img:quest) eramir: (quest:book) ;; greust",
-			"leaguestart: (img:quest) helena: <boots> ;;maligaro",
-			"(img:waypoint) / (img:portal) to areaid2_7_8 ;; northern forest"
+			"(img:quest)weylam:  (quest:book) ;; star",
+			"(img:quest)eramir:  (quest:book) ;; greust",
+			"leaguestart: (img:quest)helena:  <boots> ;;maligaro",
+			"(img:waypoint)/  (img:portal)a  areaid2_7_8 ;; northern forest"
 		],
 		[
-			"find & enter areaid2_7_9 ;; dread thicket",
-			"(hint)__ usually (img:5) of (img:waypoint), or along (img:6) edge"
+			"buscar y entrar en   areaid2_7_9 ;; dread thicket",
+			"(hint)__ generalmente (img:5)de  (img:waypoint), o along (img:6)borde "
 		],
 		[
-			"find (img:arena) den, kill gruthkul",
-			"leaguestart: (hint)_ - either (img:4) or (img:3) of (img:arena) start",
-			"leaguestart: (hint)_ - (img:craft) in the other direction",
-			"twinkrun: (hint)__ either (img:4) or (img:3) of (img:arena) start",
-			"find 7x (img:quest) (quest:firefly)",
-			"(img:portal) to areaid2_7_town ;; bridge encampment"
+			"buscar (img:arena)guarida,matar a gruthkul  ",
+			"leaguestart: (hint)_ - either (img:4)o  (img:3)de  (img:arena)comenzar ",
+			"leaguestart: (hint)_ - (img:craft)enel other dirección  ",
+			"twinkrun: (hint)__ either (img:4)o  (img:3)de  (img:arena)comenzar ",
+			"buscar 7x (img:quest) (quest:firefly)",
+			"(img:portal)a  areaid2_7_town ;; bridge encampment"
 		],
 		[
-			"(img:quest) eramir: (quest:book) ;; gruthkul",
-			"regular option: (img:lab) cruel_lab",
-			"(img:waypoint) to areaid2_7_11 ;; vaal city"
+			"(img:quest)eramir:  (quest:book) ;; gruthkul",
+			"regular option: (img:lab)cruel_lab ",
+			"(img:waypoint)a  areaid2_7_11 ;; vaal city"
 		],
 		[
-			"talk to (img:quest) yeena",
-			"enter areaid2_7_12_1 ;; temple of decay (1)"
+			"hablar con  (img:quest)yeena ",
+			"entrar en areaid2_7_12_1 ;; temple of decay (1)"
 		],
 		[
-			"enter areaid2_7_12_2 ;; temple of decay (2)",
-			"(hint)_ - floor 1: move diagonally",
-			"(hint)_ - floor 2: (rotated) z-pattern"
+			"entrar en areaid2_7_12_2 ;; temple of decay (2)",
+			"(hint)_ - floor 1: mover en diagonal",
+			"(hint)_ - floor 2: (rotated)patrón en z "
 		],
 		[
-			"find & kill arakaali",
-			"(hint)_ - floor 1+2: (rot.) z-patterns",
-			"(hint)_ - floor 3: follow (img:0) edge",
-			"enter areaid2_8_1 ;; sarn ramparts"
+			"buscar y matar arakaali  ",
+			"(hint)_ - floor 1+2: (rot.)patrones en z ",
+			"(hint)_ - floor 3: follow (img:0)borde ",
+			"entrar en areaid2_8_1 ;; sarn ramparts"
 		]
 	],
 	[
 		[
 			"optional: (color:cc99ff)smuggler's_cache (heist)",
-			"(hint)__ go (img:0), find (color:cc99ff)switch on wall",
-			"go (img:2), then follow wall",
-			"enter areaid2_8_town ;; sarn encampment"
+			"(hint)__ ir (img:0), buscar (color:cc99ff)interruptor en pared",
+			"ir (img:2), luego seguir la pared ",
+			"entrar en areaid2_8_town ;; sarn encampment"
 		],
 		[
-			"go (img:6) to areaid2_8_2_1 ;; toxic conduits"
+			"ir (img:6)a  areaid2_8_2_1 ;; toxic conduits"
 		],
 		[
-			"enter areaid2_8_2_2 ;; doedre's cesspool",
-			"(hint)_ - starting area: loop with 1 exit",
-			"(hint)_ - then: go (img:1) as much as possible"
+			"entrar en areaid2_8_2_2 ;; doedre's cesspool",
+			"(hint)_ - starting area: loop con 1 salida",
+			"(hint)_ - luego: ir (img:1)lo más posible    "
 		],
 		[
-			"find & kill kill doedre",
-			"(hint)__ try: far (img:5), far (img:3), or far (img:1)",
-			"after (img:waypoint), go (img:2) to areaid2_8_8 ;; the quay",
-			"leaguestart: (hint)__ (img:craft) is near the waypoint"
+			"buscar y matar matar a doedre  ",
+			"(hint)__ try: lejos (img:5), lejos (img:3), o lejos (img:1)",
+			"después de (img:waypoint), ir (img:2)a  areaid2_8_8 ;; the quay",
+			"leaguestart: (hint)__ (img:craft)iscerca el punto de ruta  "
 		],
 		[
-			"follow water edge: (img:quest) (quest:ankh)",
-			"search far (img:4) for (img:arena) res._site",
-			"(hint)__ (img:quest) clarissa || kill tolman",
-			"go far (img:2) to areaid2_8_9 ;; grain gate"
+			"follow agua borde: (img:quest) (quest:ankh)",
+			"buscar lejos (img:4)para  (img:arena)res._site ",
+			"(hint)__ (img:quest)clarissa|| matar a tolman  ",
+			"ir lejos (img:2)a  areaid2_8_9 ;; grain gate"
 		],
 		[
-			"(color:aqua)dead_guard leads to next (color:cc99ff)section",
-			"open hidden grate: (color:red)don't_enter",
-			"kill legion (near the (img:help) -icon)",
-			"(hint)__ in same or next (color:aqua)dead_guard (color:cc99ff)section",
-			"enter (img:arena) (color:aqua)grate: areaid2_8_14 ;; hidden underbelly"
+			"(color:aqua)dead_guard lleva a siguiente  (color:cc99ff)sección",
+			"abrir hidden grate: (color:red)don't_enter",
+			"matar legion (near the (img:help)-icon) ",
+			"(hint)__ en mismo o siguiente (color:aqua)dead_guard (color:cc99ff)sección",
+			"entrar en (img:arena) (color:aqua)grate: areaid2_8_14 ;; hidden underbelly"
 		],
 		[
-			"follow (img:6) wall to (color:cc99ff)3-way_split",
-			"set (img:portal), keep following the wall",
-			"enter areaid2_8_11 ;; solaris concourse"
+			"follow (img:6)pareda   (color:cc99ff)3-way_split",
+			"colocar (img:portal), keep following el pared",
+			"entrar en areaid2_8_11 ;; solaris concourse"
 		],
 		[
-			"enter areaid2_8_12_1 ;; solaris temple (1)",
-			"(hint)__ search the far (img:0) edge, or",
+			"entrar en areaid2_8_12_1 ;; solaris temple (1)",
+			"(hint)__ buscar el lejos (img:0)borde,o  ",
 			"(hint)__ follow channel upstream"
 		],
 		[
-			"follow (img:0) edge, get (img:waypoint)",
-			"(img:waypoint) to areaid2_8_town (img:town) ;; sarn encampment"
+			"follow (img:0)borde,obtener   (img:waypoint)",
+			"(img:waypoint)a  areaid2_8_town (img:town) ;; sarn encampment"
 		],
 		[
-			"enter (img:portal) areaid2_8_14 ;; hidden underbelly",
-			"follow 3rd path: areaid2_8_5 ;; bath house"
+			"entrar en (img:portal) areaid2_8_14 ;; hidden underbelly",
+			"follow 3rd camino: areaid2_8_5 ;; bath house"
 		],
 		[
-			"place (img:portal) in front of room",
-			"go (img:2) to areaid2_8_6 ;; lunaris concourse"
+			"place (img:portal)enfront de habitación  ",
+			"ir (img:2)a  areaid2_8_6 ;; lunaris concourse"
 		],
 		[
-			"go (img:1), activate (img:waypoint)",
-			"(img:waypoint) to areaid2_8_town (img:town) ;; sarn encampment"
+			"ir (img:1), activar (img:waypoint)",
+			"(img:waypoint)a  areaid2_8_town (img:town) ;; sarn encampment"
 		],
 		[
-			"enter (img:portal) areaid2_8_5 ;; bath house"
+			"entrar en (img:portal) areaid2_8_5 ;; bath house"
 		],
 		{
 			"condition": [
@@ -1183,9 +1183,9 @@
 				"yes"
 			],
 			"lines": [
-				"get (img:lab) trial || enter areaid2_8_4 ;; high gardens",
-				"(hint)_ - check (img:6) / (img:7) / (img:0) zone corners",
-				"(hint)_ - note: (img:arena) exit you used is (img:2) corner"
+				"obtener (img:lab)prueba|| entrar en   areaid2_8_4 ;; high gardens",
+				"(hint)_ - revisar (img:6)/  (img:7)/  (img:0)zonaesquinas  ",
+				"(hint)_ - note: (img:arena)salidayou used is   (img:2)esquina "
 			]
 		},
 		{
@@ -1194,185 +1194,185 @@
 				"no"
 			],
 			"lines": [
-				"find & enter areaid2_8_4 ;; high gardens",
-				"(hint)_ - check (img:6) / (img:7) / (img:0) zone corners",
-				"(hint)_ - note: (img:arena) exit you used is (img:2) corner"
+				"buscar y entrar en   areaid2_8_4 ;; high gardens",
+				"(hint)_ - revisar (img:6)/  (img:7)/  (img:0)zonaesquinas  ",
+				"(hint)_ - note: (img:arena)salidayou used is   (img:2)esquina "
 			]
 		},
 		[
-			"find (img:arena) arena, kill yugul",
+			"buscar (img:arena)arena,matar a yugul  ",
 			"(color:cc99ff)relog: areaid2_8_town ;; sarn encampment"
 		],
 		[
-			"(img:quest) maramoa: (quest:book) ;; gemling legion",
-			"(img:quest) hargan: <ring> || (quest:book) ;; doedre, yugul",
-			"(img:quest) clarissa: (quest:book) ;; tolman",
-			"(img:waypoint) to areaid2_8_12_1 ;; solaris temple (1)"
+			"(img:quest)maramoa:  (quest:book) ;; gemling legion",
+			"(img:quest)hargan:  <ring>||  (quest:book) ;; doedre, yugul",
+			"(img:quest)clarissa:  (quest:book) ;; tolman",
+			"(img:waypoint)a  areaid2_8_12_1 ;; solaris temple (1)"
 		],
 		[
-			"go (img:7) to areaid2_8_12_2 ;; solaris temple (2)"
+			"ir (img:7)a  areaid2_8_12_2 ;; solaris temple (2)"
 		],
 		[
-			"kill dawn for (quest:sun_orb)",
-			"leaguestart: (hint)__ follow top edge to arena: (img:craft)",
-			"twinkrun: (hint)__ follow top edge to arena",
-			"(img:portal) to areaid2_8_town ;; sarn encampment"
+			"matar dawn para (quest:sun_orb)",
+			"leaguestart: (hint)__ follow borde superior a arena:  (img:craft)",
+			"twinkrun: (hint)__ follow borde superior a arena ",
+			"(img:portal)a  areaid2_8_town ;; sarn encampment"
 		],
 		[
-			"(img:waypoint) to areaid2_8_6 ;; lunaris concourse",
-			"go (img:7) to areaid2_8_7_1_ ;; lunaris temple (1)"
+			"(img:waypoint)a  areaid2_8_6 ;; lunaris concourse",
+			"ir (img:7)a  areaid2_8_7_1_ ;; lunaris temple (1)"
 		],
 		[
-			"enter areaid2_8_7_2 ;; lunaris temple (2)",
-			"(hint)_ - initial (color:cc99ff)halls point (img:7) or (img:1)",
-			"(hint)_ - follow carpets + that direction"
+			"entrar en areaid2_8_7_2 ;; lunaris temple (2)",
+			"(hint)_ - initial (color:cc99ff)halls point (img:7)o  (img:1)",
+			"(hint)_ - seguir las alfombras + that dirección "
 		],
 		[
-			"kill dusk for (quest:moon_orb)",
-			"(hint)_ - follow (color:cc99ff)3_stairs_up + single flower-pot",
-			"leaguestart: (hint)_ - (color:cc99ff)2_large_gates lead to the arena: (img:craft)",
-			"twinkrun: (hint)_ - (color:cc99ff)2_large_gates lead to the arena",
-			"(img:portal) to areaid2_8_town ;; sarn encampment"
+			"matar dusk para (quest:moon_orb)",
+			"(hint)_ - follow (color:cc99ff)3_stairs_up + single maceta",
+			"leaguestart: (hint)_ - (color:cc99ff)2_large_gates lead a el arena: (img:craft)",
+			"twinkrun: (hint)_ - (color:cc99ff)2_large_gates lead a el arena",
+			"(img:portal)a  areaid2_8_town ;; sarn encampment"
 		],
 		[
-			"(img:waypoint) to areaid2_8_6 ;; lunaris concourse",
-			"go (img:3) to areaid2_8_13 ;; harbour bridge"
+			"(img:waypoint)a  areaid2_8_6 ;; lunaris concourse",
+			"ir (img:3)a  areaid2_8_13 ;; harbour bridge"
 		],
 		[
-			"go (img:1) to (img:arena) shrine (lvl:54+)",
-			"kill solaris_&_lunaris",
-			"enter areaid2_9_1 ;; blood aqueduct"
+			"ir (img:1)a  (img:arena)santuario  (lvl:54+)",
+			"matar solaris_&_lunaris",
+			"entrar en areaid2_9_1 ;; blood aqueduct"
 		]
 	],
 	[
 		[
 			"farm level: 58-62",
-			"enter areaid2_9_town ;; highgate",
-			"enter areaid2_9_2 ;; the descent"
+			"entrar en areaid2_9_town ;; highgate",
+			"entrar en areaid2_9_2 ;; the descent"
 		],
 		[
-			"find & enter areaid2_9_3 ;; vastiri desert",
-			"(hint)__ section 1: go (img:1) || rest: linear"
+			"buscar y entrar en   areaid2_9_3 ;; vastiri desert",
+			"(hint)__ sección 1: ir (img:1)||resto: lineal  "
 		],
 		[
-			"optional: <jewel>: go (img:1), pick a statue",
-			"go (img:2), get (img:waypoint) || find (img:quest) (quest:chest)",
-			"(hint)__ usually around (img:waypoint) or far (img:5)",
-			"go (img:0) to areaid2_9_5 ;; the foothills"
+			"optional: <jewel>: ir (img:1), pick a estatua",
+			"ir (img:2), obtener (img:waypoint)||buscar   (img:quest) (quest:chest)",
+			"(hint)__ generalmente alrededor (img:waypoint)olejos   (img:5)",
+			"ir (img:0)a  areaid2_9_5 ;; the foothills"
 		],
 		[
-			"go (img:1), activate (img:waypoint)",
-			"enter areaid2_9_6 ;; boiling lake"
+			"ir (img:1), activar (img:waypoint)",
+			"entrar en areaid2_9_6 ;; boiling lake"
 		],
 		[
-			"optional: 2x (color:cc99ff)delve_fossil: go (img:7)",
-			"go (img:1), kill basilisk for (quest:acid)",
+			"optional:2x  (color:cc99ff)delve_fossil: ir (img:7)",
+			"ir (img:1), matar basilisk para (quest:acid)",
 			"(color:cc99ff)relog: areaid2_9_town ;; highgate"
 		],
 		[
-			"(img:quest) petarus: <weapon/offhand>",
-			"talk to (img:quest) sin",
-			"(img:quest) petarus: (quest:bottled_storm)",
-			"(img:waypoint) to areaid2_9_3 ;; vastiri desert"
+			"(img:quest)petarus:  <weapon/offhand>",
+			"hablar con  (img:quest)sin ",
+			"(img:quest)petarus:  (quest:bottled_storm)",
+			"(img:waypoint)a  areaid2_9_3 ;; vastiri desert"
 		],
 		[
-			"go (img:1) to areaid2_9_4 ;; the oasis"
+			"ir (img:1)a  areaid2_9_4 ;; the oasis"
 		],
 		[
-			"find (img:arena) sand_pit, kill shakari",
-			"(hint)__ search along the (img:2) edge",
+			"buscar (img:arena)sand_pit,matar a shakari  ",
+			"(hint)__ buscar along el (img:2)borde ",
 			"(color:cc99ff)relog: areaid2_9_town ;; highgate"
 		],
 		[
-			"(img:quest) irasha: (quest:book)",
-			"(img:waypoint) to areaid2_9_5 ;; the foothills"
+			"(img:quest)irasha:  (quest:book)",
+			"(img:waypoint)a  areaid2_9_5 ;; the foothills"
 		],
 		[
 			"optional: (img:quest) <respec_points>",
-			"(hint)__ kill boulderback (color:lime)(calendar)",
-			"go (img:7) to areaid2_9_7 ;; the tunnel"
+			"(hint)__ matar boulderback (color:lime)(calendar)",
+			"ir (img:7)a  areaid2_9_7 ;; the tunnel"
 		],
 		[
-			"leaguestart: optional: random (color:cc99ff)transfig._gem:",
-			"(hint)__ switch on (img:0) wall in trial",
-			"leaguestart: complete (img:lab) trial",
-			"(hint)__ in side path with (img:help) -icon",
-			"enter areaid2_9_8 ;; the quarry"
+			"leaguestart: optional:aleatorio  (color:cc99ff)transfig._gem:",
+			"(hint)__ interruptor en (img:0)pareden prueba  ",
+			"leaguestart:completar  (img:lab)prueba ",
+			"(hint)__ en camino lateral con  (img:help)-icon ",
+			"entrar en areaid2_9_8 ;; the quarry"
 		],
 		[
-			"go (img:7) for (img:waypoint) _|| go (img:1) for (img:arena) exit",
-			"if (color:cc99ff)shrine: (img:in-out2) (color:ff8000)garukhan (color:lime)(feather)",
-			"(hint)__ then follow edge (img:6): (img:arena) the_refinery",
-			"else: enter areaid2_9_9 ;; the refinery"
+			"ir (img:7)para  (img:waypoint)_||ir   (img:1)para  (img:arena)salida ",
+			"si (color:cc99ff)santuario: (img:in-out2) (color:ff8000)garukhan (color:lime)(feather)",
+			"(hint)__ luego seguir el borde  (img:6): (img:arena)the_refinery ",
+			"else:entrar en  areaid2_9_9 ;; the refinery"
 		],
 		[
-			"go (img:7), then (img:1) to the (img:quest) -icon",
-			"leaguestart: (hint)__ (img:craft) is where rails end in a grate",
-			"kill adus, take (img:quest) (quest:powder)",
+			"ir (img:7), luego (img:1)ael   (img:quest)-icon ",
+			"leaguestart: (hint)__ (img:craft)iswhere rails end en a grate  ",
+			"matar adus, tomar (img:quest) (quest:powder)",
 			"(color:cc99ff)relog: areaid2_9_town ;; highgate"
 		],
 		[
-			"(quest:feather)? (img:quest) irasha: (quest:book)",
-			"optional: (quest:calendar)? (img:quest) petarus: <respecs>",
-			"(img:waypoint) to areaid2_9_8 ;; the quarry"
+			"(quest:feather)? (img:quest)irasha:  (quest:book)",
+			"optional: (quest:calendar)? (img:quest)petarus:  <respecs>",
+			"(img:waypoint)a  areaid2_9_8 ;; the quarry"
 		],
 		[
-			"talk to (img:quest) sin",
-			"if you haven't found (quest:feather):",
-			"(hint)_ - go (img:6) / (img:5) to (color:cc99ff)shrine for arena:garukhan",
-			"(hint)_ - (color:cc99ff)relog: (img:quest) irasha || (img:waypoint) to areaid2_9_8 ;; the quarry",
-			"enter areaid2_9_10_1 ;; belly of the beast"
+			"hablar con  (img:quest)sin ",
+			"si you haven't found (quest:feather):",
+			"(hint)_ - ir (img:6)/  (img:5)a  (color:cc99ff)santuario para arena:garukhan",
+			"(hint)_ - (color:cc99ff)relog: (img:quest)irasha||   (img:waypoint)a  areaid2_9_8 ;; the quarry",
+			"entrar en areaid2_9_10_1 ;; belly of the beast"
 		],
 		[
-			"go (img:4), check for east block:",
-			"(hint)_ - if blocked: go (img:6), then (img:1)",
-			"(hint)_ - else: go (img:6) whenever possible",
-			"enter areaid2_9_10_2 ;; rotting core"
+			"ir (img:4), revisar para este block:",
+			"(hint)_ - si bloqueado: ir (img:6), luego (img:1)",
+			"(hint)_ - else:ir  (img:6)siempre que sea posible  ",
+			"entrar en areaid2_9_10_2 ;; rotting core"
 		],
 		[
-			"take 2nd path (img:0) to (img:arena) core",
-			"(img:quest) sin || clear (color:cc99ff)3_sub-areas",
-			"(img:quest) sin || kill depraved_trinity",
-			"(img:quest) lilly: areaid2_10_town ;; oriath docks"
+			"tomar 2nd camino (img:0)a  (img:arena)core ",
+			"(img:quest)sin|| limpiar   (color:cc99ff)3_sub-areas",
+			"(img:quest)sin|| matar depraved_trinity  ",
+			"(img:quest)lilly:  areaid2_10_town ;; oriath docks"
 		]
 	],
 	[
 		[
-			"enter areaid2_10_1 ;; cathedral rooftop"
+			"entrar en areaid2_10_1 ;; cathedral rooftop"
 		],
 		[
-			"go (img:0) to kill plaguewing",
-			"go (img:3) to areaid2_10_2 ;; ravaged square"
+			"ir (img:0)amatar plaguewing  ",
+			"ir (img:3)a  areaid2_10_2 ;; ravaged square"
 		],
 		[
-			"go (img:3) to fountain, set (img:portal)",
-			"go (img:2), follow alley, get (img:waypoint)",
-			"go (img:3) to areaid2_10_3 ;; torched courts"
+			"ir (img:3)afountain, colocar   (img:portal)",
+			"ir (img:2), follow alley, obtener (img:waypoint)",
+			"ir (img:3)a  areaid2_10_3 ;; torched courts"
 		],
 		[
-			"enter areaid2_10_4 ;; desecrated chambers",
-			"(hint)__ (color:cc99ff)start & (color:cc99ff)exit: adjacent corners2"
+			"entrar en areaid2_10_4 ;; desecrated chambers",
+			"(hint)__ (color:cc99ff)comenzar y (color:cc99ff)salida: adjacent corners2"
 		],
 		[
-			"follow (img:0) edge, kill avarius",
-			"leaguestart: (hint)__ (img:craft): corridor along (img:4) edge",
-			"go (img:3), (img:waypoint) to areaid2_10_town (img:town) ;; oriath docks"
+			"follow (img:0)borde,matar avarius  ",
+			"leaguestart: (hint)__ (img:craft): pasillo along (img:4)borde ",
+			"ir (img:3), (img:waypoint)a  areaid2_10_town (img:town) ;; oriath docks"
 		],
 		[
-			"talk to (img:quest) bannon",
-			"enter (img:portal) areaid2_10_2 ;; ravaged square"
+			"hablar con  (img:quest)bannon ",
+			"entrar en (img:portal) areaid2_10_2 ;; ravaged square"
 		],
 		[
-			"go (img:5) to areaid2_10_7 ;; control blocks"
+			"ir (img:5)a  areaid2_10_7 ;; control blocks"
 		],
 		[
-			"go far (img:6), kill vilenta",
-			"(img:portal) to areaid2_10_town ;; oriath docks"
+			"ir lejos (img:6), matar a vilenta",
+			"(img:portal)a  areaid2_10_town ;; oriath docks"
 		],
 		[
-			"(img:quest) lani: (color:8787fe)flask || <armor> || (quest:book) ;; plaguewing || avarius || vilenta",
-			"twinkrun: complete (img:lab) merciless_lab",
-			"(img:waypoint) to areaid2_10_2 ;; ravaged square"
+			"(img:quest)lani:  (color:8787fe)frasco || <armor>||  (quest:book) ;; plaguewing || avarius || vilenta",
+			"twinkrun:completar  (img:lab)merciless_lab ",
+			"(img:waypoint)a  areaid2_10_2 ;; ravaged square"
 		],
 		{
 			"condition": [
@@ -1380,7 +1380,7 @@
 				"yes"
 			],
 			"lines": [
-				"enter areaid2_10_9 ;; the ossuary"
+				"entrar en areaid2_10_9 ;; the ossuary"
 			]
 		},
 		{
@@ -1390,9 +1390,9 @@
 			],
 			"lines": [
 				"optional: (color:cc99ff)10m_gem_exp (facetor's lens):",
-				"(hint)__ switch on (img:0) wall in trial",
-				"follow edge, complete (img:lab) trial",
-				"(hint)__ (img:craft) + (img:lab) are near (img:quest) (quest:elixir) (<2_respecs>)",
+				"(hint)__ interruptor en (img:0)pareden prueba  ",
+				"seguir el borde, completar  (img:lab)prueba ",
+				"(hint)__ (img:craft)+  (img:lab)arecerca   (img:quest) (quest:elixir) (<2_respecs>)",
 				"(color:cc99ff)relog: areaid2_10_town ;; oriath docks"
 			]
 		},
@@ -1402,29 +1402,29 @@
 				"yes"
 			],
 			"lines": [
-				"(quest:elixir)? (img:quest) weylam: <respecs>",
-				"complete (img:lab) merciless_lab",
-				"(img:waypoint) to areaid2_10_2 ;; ravaged square"
+				"(quest:elixir)? (img:quest)weylam:  <respecs>",
+				"completar (img:lab)merciless_lab ",
+				"(img:waypoint)a  areaid2_10_2 ;; ravaged square"
 			]
 		},
 		[
-			"talk to (img:quest) innocence",
-			"enter areaid2_10_5 ;; the canals"
+			"hablar con  (img:quest)innocence ",
+			"entrar en areaid2_10_5 ;; the canals"
 		],
 		[
-			"follow the zone (img:7)",
-			"enter areaid2_10_6 ;; feeding trough"
+			"follow el zona (img:7)",
+			"entrar en areaid2_10_6 ;; feeding trough"
 		],
 		[
-			"go (img:7) || (img:quest) sin || kill kitava",
-			"(img:quest) sin || enter areaid2_10_town ;; oriath docks"
+			"ir (img:7)||  (img:quest)sin|| matar a kitava  ",
+			"(img:quest)sin|| entrar en   areaid2_10_town ;; oriath docks"
 		],
 		[
-			"(img:quest) lani: (quest:book)",
-			"(img:quest) lilly: areaid2_11_endgame_town ;; karui shores"
+			"(img:quest)lani:  (quest:book)",
+			"(img:quest)lilly:  areaid2_11_endgame_town ;; karui shores"
 		],
 		[
-			"leaguestart: get the (img:craft) || talk to (img:quest) kirac",
+			"leaguestart:obtenerel   (img:craft)||hablar con    (img:quest)kirac ",
 			"<type_\"/passives\"_in_chat>",
 			"<the_act-tracker_guide_ends_here>"
 		]
