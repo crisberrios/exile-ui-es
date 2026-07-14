@@ -1,5 +1,8 @@
 # exile-ui-es
 
+> 🎮 **¿Solo querés descargar Exile-UI en español?**  
+> [⬇ Descargar última versión](../../releases/latest) · [Ver todas las versiones](../../releases)
+
 Herramienta de traducción al español latinoamericano para [Exile-UI](https://github.com/Lailloken/Exile-UI), el overlay de calidad de vida para Path of Exile 1 y 2.
 
 ## Instalación

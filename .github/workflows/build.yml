@@ -2,14 +2,16 @@ name: Build and Release
 
 on:
   push:
-    branches: [main]
+    branches: [master, main]
   schedule:
-    - cron: "0 0 * * 0"  # Weekly on Sunday
+    - cron: '0 6 * * *'  # Daily at 6am UTC
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
 
@@ -23,19 +25,58 @@ jobs:
         run: uv run pytest -v
 
       - name: Pull latest Exile-UI
-        run: uv run exile-ui-es pull
+        id: pull
+        run: |
+          uv run exile-ui-es pull
+          BASE_VERSION=$(ls downloads/ | grep -v '\.zip$' | sort -Vr | head -1)
+          echo "base_version=$BASE_VERSION" >> $GITHUB_OUTPUT
+          echo "Base Exile-UI version: $BASE_VERSION"
 
       - name: Translate to Spanish
         run: uv run exile-ui-es translate
 
-      - name: Generate patches
-        run: uv run exile-ui-es patch
-
       - name: Create bundle
-        run: uv run exile-ui-es bundle --output bundle/
+        run: uv run exile-ui-es bundle
 
-      - name: Upload bundle artifact
-        uses: actions/upload-artifact@v4
+      - name: Determine release version
+        id: version
+        run: |
+          BASE="${{ steps.pull.outputs.base_version }}"
+          EXISTING=$(gh release list --json tagName --jq '.[].tagName' 2>/dev/null | grep "^${BASE}-" | sed "s/${BASE}-//" | sort -n | tail -1)
+          if [ -z "$EXISTING" ]; then
+            REV=1
+          else
+            REV=$((EXISTING + 1))
+          fi
+          RELEASE_TAG="${BASE}-${REV}"
+          echo "release_tag=$RELEASE_TAG" >> $GITHUB_OUTPUT
+          echo "Release tag: $RELEASE_TAG"
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Find bundle file
+        id: bundle
+        run: |
+          BUNDLE=$(ls downloads/Exile-UI-es-*.zip | head -1)
+          echo "path=$BUNDLE" >> $GITHUB_OUTPUT
+          echo "Bundle: $BUNDLE"
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
         with:
-          name: exile-ui-es-bundle
-          path: bundle/
+          tag_name: ${{ steps.version.outputs.release_tag }}
+          name: "Exile-UI ES ${{ steps.version.outputs.release_tag }}"
+          body: |
+            ## Exile-UI en Español (LATAM) — ${{ steps.version.outputs.release_tag }}
+
+            Basado en [Exile-UI ${{ steps.pull.outputs.base_version }}](https://github.com/Lailloken/Exile-UI/releases/tag/${{ steps.pull.outputs.base_version }}).
+
+            ### Instalación
+            1. Descargá el zip de esta release
+            2. Extraé donde quieras
+            3. Ejecutá `Exile UI.ahk` con AutoHotkey v2
+
+            ### Cambios
+            - Traducción al español latinoamericano aplicada
+            - Revisión de traducción: ${{ steps.version.outputs.release_tag }}
+          files: ${{ steps.bundle.outputs.path }}
