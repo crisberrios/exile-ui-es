@@ -1,6 +1,6 @@
 # exile-ui-es
 
-> 🎮 **¿Solo querés descargar Exile-UI en español?**  
+> 🎮 **¿Solo quieres descargar Exile-UI en español?**  
 > [⬇ Descargar última versión](../../releases/latest) · [Ver todas las versiones](../../releases)
 
 Herramienta de traducción al español latinoamericano para [Exile-UI](https://github.com/Lailloken/Exile-UI), el overlay de calidad de vida para Path of Exile 1 y 2.
@@ -35,7 +35,7 @@ uv run exile-ui-es bundle
 uv run exile-ui-es revert --install /ruta/a/Exile-UI
 ```
 
-También podes usar el Makefile:
+También puedes usar el Makefile:
 
 ```bash
 make pull       # Descargar
@@ -100,7 +100,7 @@ El archivo `data/poe_terms_es.json` contiene la referencia de términos oficiale
 - **skill_gems**: Gemas de habilidad (Support → Asistencia, etc.)
 - **mod_types**: Tipos de modificadores (Prefix → Prefijo, Suffix → Sufijo)
 
-Para mantener las traducciones actualizadas, edita este archivo y volvé a correr `translate`.
+Para mantener las traducciones actualizadas, edita este archivo y vuelve a ejecutar `translate`.
 
 ## CI/CD
 
